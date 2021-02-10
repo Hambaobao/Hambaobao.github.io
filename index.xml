@@ -6,18 +6,28 @@
     <description>Recent content on Hambaobao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Feb 2021 16:30:05 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Feb 2021 16:56:17 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://hambaobao.github.io/post/my-first-post/</link>
-      <pubDate>Wed, 10 Feb 2021 16:30:05 +0800</pubDate>
+      <title>Post Test 2</title>
+      <link>https://hambaobao.github.io/post/post-test-2/</link>
+      <pubDate>Wed, 10 Feb 2021 16:56:17 +0800</pubDate>
       
-      <guid>https://hambaobao.github.io/post/my-first-post/</guid>
-      <description>Advertisement :)
- pica - high quality and fast image resize in browser. babelfish - developer friendly i18n with plurals support and easy syntax.  You will like those projects!
- h1 Heading 8-) h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading Horizontal Rules    Typographic replacements Enable typographer option to see result.
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-test.. test&amp;hellip; test&amp;hellip;.. test?</description>
+      <guid>https://hambaobao.github.io/post/post-test-2/</guid>
+      <description>标题 一级标题 二级标题 三级标题 四级标题 五级标题 六级标题 列表 无序列表  1 2 3  锚点地址 空心原点  实心1 实心2 实心3  空心1 空心2 空心3    * 实心1 * 实心2 * 实心3 * 空心1 * 空心2 * 空心3 实心方块  实心1 实心2 实心3  空心1 空心2 空心3  实心方块1 实心方块2 实心方块3      * 实心1 * 实心2 * 实心3 * 空心1 * 空心2 * 空心3 * 实心方块1 * 实心方块2 * 实心方块3 有序列表  1 2 3  引用  这里是引用</description>
+    </item>
+    
+    <item>
+      <title>Post Test 1</title>
+      <link>https://hambaobao.github.io/post/post-test-1/</link>
+      <pubDate>Wed, 10 Feb 2021 16:55:23 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/post/post-test-1/</guid>
+      <description>Heading 1 Paragraphs are separated by a blank line.
+2nd paragraph. Italic, bold, monospace. Itemized lists look like:
+ this one that one the other one  Note that &amp;mdash; not considering the asterisk &amp;mdash; the actual text content starts at 3-columns in.
+ Block quotes are written like so.
+They can span multiple paragraphs, if you like.
+ With smartyPants set to true in the markdown module configuration, you can format your content smartly:</description>
     </item>
     
   </channel>
