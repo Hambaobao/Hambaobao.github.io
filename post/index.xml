@@ -13,10 +13,11 @@
       <pubDate>Wed, 10 Feb 2021 16:30:05 +0800</pubDate>
       
       <guid>https://hambaobao.github.io/post/my-first-post/</guid>
-      <description>首先声名，这并不是一份完整的[Markdown][1]的语法介绍，需要看完整的介绍请点击[Markdown Syntax Documentation][2]。
-本文的Markdown源代码可以至后台编辑文章进行查看，文章结尾也将以源代码的形式贴出
-段落 一个段落是由一个或多个连续的行构成，段落间靠一个或以上视觉上的空行划分。一般的段落不应该用空格或制表符缩进
-这是一个段落。它有两个句子。这是另一个段落。它也有 两个句子。</description>
+      <description>Advertisement :)
+ pica - high quality and fast image resize in browser. babelfish - developer friendly i18n with plurals support and easy syntax.  You will like those projects!
+ h1 Heading 8-) h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading Horizontal Rules    Typographic replacements Enable typographer option to see result.
+(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+test.. test&amp;hellip; test&amp;hellip;.. test?</description>
     </item>
     
   </channel>
