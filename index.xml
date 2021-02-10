@@ -6,7 +6,16 @@
     <description>Recent content on Hambaobao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Feb 2021 17:04:11 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Feb 2021 17:07:26 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post Test 2</title>
+      <link>https://hambaobao.github.io/post/post-test-2/</link>
+      <pubDate>Wed, 10 Feb 2021 17:07:26 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/post/post-test-2/</guid>
+      <description>标题 一级标题 二级标题 三级标题 四级标题 五级标题 六级标题 列表 无序列表  1 2 3  锚点地址 空心原点  实心1 实心2 实心3  空心1 空心2 空心3    * 实心1 * 实心2 * 实心3 * 空心1 * 空心2 * 空心3 实心方块  实心1 实心2 实心3  空心1 空心2 空心3  实心方块1 实心方块2 实心方块3      * 实心1 * 实心2 * 实心3 * 空心1 * 空心2 * 空心3 * 实心方块1 * 实心方块2 * 实心方块3 有序列表  1 2 3  引用  这里是引用</description>
+    </item>
+    
     <item>
       <title>Post Test 1</title>
       <link>https://hambaobao.github.io/post/post-test-1/</link>
