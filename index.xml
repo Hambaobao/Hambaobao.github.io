@@ -39,5 +39,23 @@ They can span multiple paragraphs, if you like.
  With smartyPants set to true in the markdown module configuration, you can format your content smartly:</description>
     </item>
     
+    <item>
+      <title>Archive</title>
+      <link>https://hambaobao.github.io/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hambaobao.github.io/archives/</guid>
+      <description>archives</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://hambaobao.github.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hambaobao.github.io/search/</guid>
+      <description>search</description>
+    </item>
+    
   </channel>
 </rss>
