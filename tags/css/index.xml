@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on Hambaobao</title>
+    <link>https://hambaobao.github.io/tags/css/</link>
+    <description>Recent content in css on Hambaobao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Feb 2021 11:56:56 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post Test 3</title>
+      <link>https://hambaobao.github.io/post/post-test-3/</link>
+      <pubDate>Thu, 11 Feb 2021 11:56:56 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/post/post-test-3/</guid>
+      <description>Picture 1 Picture 2 </description>
+    </item>
+    
+  </channel>
+</rss>

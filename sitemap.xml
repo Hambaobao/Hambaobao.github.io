@@ -3,7 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hambaobao.github.io/categories/</loc>
+    <lastmod>2021-02-11T11:56:56+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/tags/css/</loc>
+    <lastmod>2021-02-11T11:56:56+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hambaobao.github.io/</loc>
+    <lastmod>2021-02-11T11:56:56+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/tags/html/</loc>
+    <lastmod>2021-02-11T11:56:56+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/tags/markdown/</loc>
     <lastmod>2021-02-11T11:56:56+08:00</lastmod>
   </url>
   
@@ -14,6 +34,26 @@
   
   <url>
     <loc>https://hambaobao.github.io/post/</loc>
+    <lastmod>2021-02-11T11:56:56+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/categories/syntax/</loc>
+    <lastmod>2021-02-11T11:56:56+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/tags/</loc>
+    <lastmod>2021-02-11T11:56:56+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/tags/themes/</loc>
+    <lastmod>2021-02-11T11:56:56+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/categories/themes/</loc>
     <lastmod>2021-02-11T11:56:56+08:00</lastmod>
   </url>
   
@@ -32,15 +72,7 @@
   </url>
   
   <url>
-    <loc>https://hambaobao.github.io/categories/</loc>
-  </url>
-  
-  <url>
     <loc>https://hambaobao.github.io/search/</loc>
-  </url>
-  
-  <url>
-    <loc>https://hambaobao.github.io/tags/</loc>
   </url>
   
 </urlset>
