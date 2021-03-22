@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning on Hambaobao</title>
+    <link>https://hambaobao.github.io/tags/deep-learning/</link>
+    <description>Recent content in Deep Learning on Hambaobao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Mar 2021 11:27:12 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contrastive Representation</title>
+      <link>https://hambaobao.github.io/post/contrastive-representation/</link>
+      <pubDate>Mon, 22 Mar 2021 11:27:12 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/post/contrastive-representation/</guid>
+      <description>Contrastive Representation TODO
+​	解释对比表示学习。</description>
+    </item>
+    
+  </channel>
+</rss>
