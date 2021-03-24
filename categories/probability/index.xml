@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probability on Hambaobao</title>
+    <link>https://hambaobao.github.io/categories/probability/</link>
+    <description>Recent content in Probability on Hambaobao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Mar 2021 19:58:08 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/categories/probability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>重学概率论 独立、互斥、对立</title>
+      <link>https://hambaobao.github.io/post/%E9%87%8D%E5%AD%A6%E6%A6%82%E7%8E%87%E8%AE%BA-%E7%8B%AC%E7%AB%8B%E4%BA%92%E6%96%A5%E5%AF%B9%E7%AB%8B/</link>
+      <pubDate>Wed, 24 Mar 2021 19:58:08 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/post/%E9%87%8D%E5%AD%A6%E6%A6%82%E7%8E%87%E8%AE%BA-%E7%8B%AC%E7%AB%8B%E4%BA%92%E6%96%A5%E5%AF%B9%E7%AB%8B/</guid>
+      <description>独立事件 定义 事件 $A$ 和事件 $B$ 互斥的定义是：$P(A \cap B) = P(A)P(B)$ ，即事件 $A$ 的发生不会对事件 $B$ 的发生产生任何影响，事件 $B$ 的发生不会对事件 $A$ 的发生产生任何影响。
+例子 抛两次硬币，记第一次抛到正面朝上为事件 $A$ ，第二次抛到正面朝上为事件 $B$ ，则事件 $A$ 和事件 $B$ 相互独立，因为第一抛硬币的结果并不会影响第二次抛硬币的结果。
+互斥事件 定义 事件 $A$ 和事件 $B$ 互斥的定义是：$A \cap B = \emptyset$ ，即事件 $A$ 和事件 $B$ 不可能同时发生。
+例子 设一个大学生是大一学生、大二学生、大三学生、大四学生分别为事件 $A、B、C、D$ ，则事件 $A$ 和事件 $B$ 是互斥事件，因为一个同学不可能既是大一学生又是大二学生。
+对立事件 定义 事件 $A$ 和事件 $B$ 对立的定义是：$A \cap B = \emptyset$ 并且 $A \cup B = U$ 。</description>
+    </item>
+    
+  </channel>
+</rss>
