@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LaTex on Hambaobao</title>
+    <link>https://hambaobao.github.io/tags/latex/</link>
+    <description>Recent content in LaTex on Hambaobao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Mar 2021 14:36:07 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown 常用 LaTex 公式</title>
+      <link>https://hambaobao.github.io/post/markdown-%E5%B8%B8%E7%94%A8latex%E5%85%AC%E5%BC%8F/</link>
+      <pubDate>Thu, 25 Mar 2021 14:36:07 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/post/markdown-%E5%B8%B8%E7%94%A8latex%E5%85%AC%E5%BC%8F/</guid>
+      <description>希腊字母    公式 语法     \(\alpha\) \alpha   \(\theta\) \theta   \(o\) o   \(\tau\) \tau   \(\beta\) \beta   \(\pi\) \pi   \(\upsilon\) \upsilon   \(\gamma\) \gamma   \(\iota\) \iota   \(\omega\) \omega   \(\phi\) \phi   \(\varphi\) \varphi   \(\epsilon\) \epsilon   \(\lambda\) \lambda   \(\chi\) \chi   \(\varepsilon\) \varepsilon   \(\mu\) \mu   \(\sigma\) \sigma   \(\psi\) \psi   \(\zeta\) \zeta   \(\nu\) \nu   \(\eta\) \eta   \(\xi\) xi   \(\Gamma\) \Gamma   \(\Lambda\) \Lambda   \(\Sigma\) \Sigma   \(\Psi\) \Psi   \(\Delta\) \Delta   \(\Upsilon\) \Upsilon   \(\Omega\) \Omega   \(\Theta\) \Theta   \(\Pi\) \Pi   \(\Phi\) \Phi    &amp;nbsp;</description>
+    </item>
+    
+  </channel>
+</rss>

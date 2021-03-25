@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Hambaobao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Mar 2021 14:36:07 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Mar 2021 19:25:17 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>markdown</title>
+      <link>https://hambaobao.github.io/tags/markdown/</link>
+      <pubDate>Thu, 25 Mar 2021 19:25:17 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>formula</title>
       <link>https://hambaobao.github.io/tags/formula/</link>
@@ -17,20 +26,11 @@
     </item>
     
     <item>
-      <title>html</title>
-      <link>https://hambaobao.github.io/tags/html/</link>
+      <title>LaTex</title>
+      <link>https://hambaobao.github.io/tags/latex/</link>
       <pubDate>Thu, 25 Mar 2021 14:36:07 +0800</pubDate>
       
-      <guid>https://hambaobao.github.io/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>https://hambaobao.github.io/tags/markdown/</link>
-      <pubDate>Thu, 25 Mar 2021 14:36:07 +0800</pubDate>
-      
-      <guid>https://hambaobao.github.io/tags/markdown/</guid>
+      <guid>https://hambaobao.github.io/tags/latex/</guid>
       <description></description>
     </item>
     
@@ -85,6 +85,15 @@
       <pubDate>Thu, 11 Feb 2021 11:56:56 +0800</pubDate>
       
       <guid>https://hambaobao.github.io/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://hambaobao.github.io/tags/html/</link>
+      <pubDate>Thu, 11 Feb 2021 11:56:56 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/tags/html/</guid>
       <description></description>
     </item>
     
