@@ -6,7 +6,20 @@
     <description>Recent content in 概率论 on Hambaobao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Mar 2021 19:58:08 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Mar 2021 11:37:02 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>重学概率论：零散知识记录</title>
+      <link>https://hambaobao.github.io/post/%E9%87%8D%E5%AD%A6%E6%A6%82%E7%8E%87%E8%AE%BA-%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Thu, 25 Mar 2021 11:37:02 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/post/%E9%87%8D%E5%AD%A6%E6%A6%82%E7%8E%87%E8%AE%BA-%E9%9B%B6%E6%95%A3%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%95/</guid>
+      <description>公式记号 \[ P(A \cap B) = P(AB) \]
+事件独立性 独立 (Independent) 和两两相互独立 (Pairwise independent)  记有事件 \(A_1、A_2、...、A_m\) ，若事件 \(A_1、A_2、...、A_m\) 独立： \( P(A_1 \cap A_2 \cap ... \cap A_m) = P(A_1)P(A_2)...P(A_m) \)
+若事件 \(A_1、A_2、...、A_m\) 两两相互独立： \( P(A_i \cap A_j) = P(A_i)P(A_j), for\ any \ 1 \le i, j \le m \)
+注意 事件 \(A_1、A_2、...、A_m\) 独立比事件 \(A_1、A_2、...、A_m\) 两两相互独立的条件更强，即使事件 \(A_1、A_2、...、A_m\) 两两相互独立，事件 \(A_1、A_2、...、A_m\) 也不一定独立，即公式 $(3)$ 成立，公式 $(2)$ 也不一定成立。
+例子 抛两次骰子，记第一次抛出正面为事件 \(A\) ，记第二次抛出正面为事件 \(B\) ，记两次抛出得到相同的面为事件 \(C\) ，事件 \(A、B、C\) 两两相互独立，但是事件 \(A、B、C\) 并不独立： \( P(A \cap B) = P(A \cap C) = P(B \cap C) = \frac{1}{4} \)</description>
+    </item>
+    
     <item>
       <title>重学概率论 1：独立、互斥、对立</title>
       <link>https://hambaobao.github.io/post/%E9%87%8D%E5%AD%A6%E6%A6%82%E7%8E%87%E8%AE%BA1-%E7%8B%AC%E7%AB%8B%E4%BA%92%E6%96%A5%E5%AF%B9%E7%AB%8B/</link>
