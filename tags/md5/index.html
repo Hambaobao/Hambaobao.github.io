@@ -5,12 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Categories | Hambaobao</title>
+<title>md5 | Hambaobao</title>
 
 <meta name="keywords" content="" />
 <meta name="description" content="">
 <meta name="author" content="Hambaobao">
-<link rel="canonical" href="https://hambaobao.github.io/categories/" />
+<link rel="canonical" href="https://hambaobao.github.io/tags/md5/" />
 <link href="/assets/css/stylesheet.min.3b4ed2e80185ab356f837eda72c1debdea24ca2d707d78b82f2534624843aaa0.css" integrity="sha256-O07S6AGFqzVvg37acsHeveokyi1wfXi4LyU0YkhDqqA=" rel="preload stylesheet"
     as="style">
 
@@ -22,16 +22,16 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.80.0" />
-<link rel="alternate" type="application/rss&#43;xml" href="https://hambaobao.github.io/categories/index.xml">
+<link rel="alternate" type="application/rss&#43;xml" href="https://hambaobao.github.io/tags/md5/index.xml">
 
 
-<meta property="og:title" content="Categories" />
+<meta property="og:title" content="md5" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://hambaobao.github.io/categories/" />
+<meta property="og:url" content="https://hambaobao.github.io/tags/md5/" />
 <meta property="og:updated_time" content="2021-03-26T13:37:17+08:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
+<meta name="twitter:title" content="md5"/>
 <meta name="twitter:description" content=""/>
 
 
@@ -100,7 +100,7 @@
             </li>
             <li>
                 <a href="https://hambaobao.github.io/categories/" title="Categories">
-                    <span class="active">Categories</span>
+                    <span>Categories</span>
                 </a>
             </li>
             <li>
@@ -116,23 +116,41 @@
     </nav>
 </header>
 
-    <main class="main">
+    <main class="main"> 
 <header class="page-header">
-    <h1>Categories</h1>
+<div class="breadcrumbs">
+
+    <a href="https://hambaobao.github.io">Home</a>&nbsp;»&nbsp;<a href="https://hambaobao.github.io/tags/">Tags</a>
+</div>
+
+  <h1>md5</h1>
 </header>
 
-<ul class="terms-tags">
-    <li>
-        <a href="https://hambaobao.github.io/categories/probability/">Probability <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://hambaobao.github.io/categories/syntax/">syntax <sup><strong><sup>4</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://hambaobao.github.io/categories/themes/">themes <sup><strong><sup>3</sup></strong></sup> </a>
-    </li>
-</ul>
 
+
+<article class="post-entry tag-entry"> 
+
+  <header class="entry-header">
+    <h2>
+      Md5解决Gitalk报错Error:Validation Failed
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>环境描述  Blog 框架：Hugo； Blog 主题：PaperMod； 本文发布时间：2021-03-26   
+问题描述 由于 Github 限制 label 长度不能超过 \(50\) ，所以当 Blog 名称长度超过 \(50\) 后，Gitalk 就不能成功初始化 issue ，开启评论时提示错误信息为：Error:Validation Failed 。
+ 
+解决方法 1. 找到一个 JS 实现的 md5 脚本 比如这个： JavaScript- MD5，我使用的是该仓库下的 js/md5.min.js 这个文件，把它下载下来，然后放到自己的网站的 js 脚本目录下，比如我的是 https://hambaobao.github.io/assets/js/ ，此处为生成静态网站文件后上传到 Github 的目录位置，至于在本地的时候放在哪里，由于不同框架和主题不同请读者自行判断，我是放到了本地的 /public/assets/js/ 下。
+ 
+2. 修改 Gitalk 配置文件 简单的引入md5 脚本，并修改 Gitalk 配置中的 id 即可。
+原文件：
+{{ if .Site.Params.enableGitalk }} &lt;div id=&#34;gitalk-container&#34;&gt;&lt;/div&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css&#34;&gt; &lt;script src=&#34;https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js&#34;&gt;&lt;/script&gt; &lt;script&gt; const gitalk = new Gitalk({ clientID: &#39;{{ ....</p>
+  </section>
+  <footer class="entry-footer">
+
+March 26, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Hambaobao
+</footer>
+  <a class="entry-link" aria-label="post link to Md5解决Gitalk报错Error:Validation Failed" href="https://hambaobao.github.io/post/md5%E8%A7%A3%E5%86%B3gitalk%E6%8A%A5%E9%94%99errorvalidation-failed/"></a>
+</article>
 
     </main><footer class="footer">
     <span>&copy; 2021 <a href="https://hambaobao.github.io">Hambaobao</a></span>

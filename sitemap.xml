@@ -3,37 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hambaobao.github.io/categories/</loc>
+    <lastmod>2021-03-26T13:37:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/tags/gitalk/</loc>
+    <lastmod>2021-03-26T13:37:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/</loc>
+    <lastmod>2021-03-26T13:37:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/tags/hugo/</loc>
+    <lastmod>2021-03-26T13:37:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/tags/md5/</loc>
+    <lastmod>2021-03-26T13:37:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/post/md5%E8%A7%A3%E5%86%B3gitalk%E6%8A%A5%E9%94%99errorvalidation-failed/</loc>
+    <lastmod>2021-03-26T13:37:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/post/</loc>
+    <lastmod>2021-03-26T13:37:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/tags/</loc>
+    <lastmod>2021-03-26T13:37:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hambaobao.github.io/categories/themes/</loc>
+    <lastmod>2021-03-26T13:37:17+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hambaobao.github.io/post/blog-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</loc>
     <lastmod>2021-03-25T19:25:17+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hambaobao.github.io/categories/</loc>
-    <lastmod>2021-03-25T19:25:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hambaobao.github.io/</loc>
-    <lastmod>2021-03-25T19:25:17+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hambaobao.github.io/tags/markdown/</loc>
-    <lastmod>2021-03-25T19:25:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hambaobao.github.io/post/</loc>
-    <lastmod>2021-03-25T19:25:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hambaobao.github.io/tags/</loc>
-    <lastmod>2021-03-25T19:25:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hambaobao.github.io/categories/themes/</loc>
     <lastmod>2021-03-25T19:25:17+08:00</lastmod>
   </url>
   
