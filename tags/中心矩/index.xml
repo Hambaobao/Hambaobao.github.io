@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>中心矩 on Hambaobao</title>
+    <link>https://hambaobao.github.io/tags/%E4%B8%AD%E5%BF%83%E7%9F%A9/</link>
+    <description>Recent content in 中心矩 on Hambaobao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Apr 2021 15:44:11 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/tags/%E4%B8%AD%E5%BF%83%E7%9F%A9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>矩</title>
+      <link>https://hambaobao.github.io/post/%E7%9F%A9/</link>
+      <pubDate>Wed, 21 Apr 2021 15:44:11 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/post/%E7%9F%A9/</guid>
+      <description>矩 概率统计中用于描述样本的分布情况的数学量。
+&amp;nbsp;
+原点矩 令 \(k\) 为正整数， \(a\) 为任意实数， \(X\) 为随机变量，则 \( \upsilon_k = E((X-a)^k) \) 称为随机变量对 \(a\) 的 \(k\) 阶矩。
+当 \(a = 0\) 时， \( \upsilon_k = E(X^k) \) 即为随机变量 \(X\) 的 \(k\) 阶原点矩。
+随机变量 \(X\) 的 一阶原点矩 即为其期望 \(E(X)\) ，也称为样本的中心。
+&amp;nbsp;
+中心矩 对于一维随机变量 \(X\)，其 \(k\) 阶中心矩 \(\mu_k\) 为相对于 \(E(X)\) 的 \(k\) 阶矩： \( \mu_k = E((X-E(X)^k)) = \int_{-\infty}^{+\infty} (x - \mu)^k f(x) dx \)
+意义  0 阶中心矩 \(\mu_0\) 恒为 \(1\) ； 1 阶中心距 \(\mu_1\) 恒为 \(0\) ； 2 阶中心距 \(\mu_2 = \int_{-\infty}^{+\infty}[x - E(x)]^2dx = E(X^2) - E(X)^2\) ，为 \(X\) 的方差 \(Var(X)\) ； 3 阶中心距 \(\mu_3 = \int_{-\infty}^{+\infty}[x - E(x)]^3 dx\) 为 \(X\) 的偏态； 4 阶中心距 \(\mu_4 = \int_{-\infty}^{+\infty}[x - E(x)]^4 dx\) 为 \(X\) 的峰态；  性质  中心矩具有平移不变性，对任意随机变量 \(X\) 和任意常数 \(c\) ，恒有：\(\mu_n(X+c) = \mu_n(X)\) ； \(n\) 阶中心矩是 \(n\) 的齐次函数：\(\mu_n(cX) = c^n\mu_n(X)\) ；  &amp;nbsp;</description>
+    </item>
+    
+  </channel>
+</rss>

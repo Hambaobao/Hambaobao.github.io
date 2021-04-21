@@ -6,7 +6,52 @@
     <description>Recent content in Tags on Hambaobao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Mar 2021 20:02:48 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Apr 2021 15:44:11 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Probability</title>
+      <link>https://hambaobao.github.io/tags/probability/</link>
+      <pubDate>Wed, 21 Apr 2021 15:44:11 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/tags/probability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>中心矩</title>
+      <link>https://hambaobao.github.io/tags/%E4%B8%AD%E5%BF%83%E7%9F%A9/</link>
+      <pubDate>Wed, 21 Apr 2021 15:44:11 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/tags/%E4%B8%AD%E5%BF%83%E7%9F%A9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>样本矩</title>
+      <link>https://hambaobao.github.io/tags/%E6%A0%B7%E6%9C%AC%E7%9F%A9/</link>
+      <pubDate>Wed, 21 Apr 2021 15:44:11 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/tags/%E6%A0%B7%E6%9C%AC%E7%9F%A9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>概率论</title>
+      <link>https://hambaobao.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/</link>
+      <pubDate>Wed, 21 Apr 2021 15:44:11 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>矩</title>
+      <link>https://hambaobao.github.io/tags/%E7%9F%A9/</link>
+      <pubDate>Wed, 21 Apr 2021 15:44:11 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/tags/%E7%9F%A9/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>pdb</title>
       <link>https://hambaobao.github.io/tags/pdb/</link>
@@ -80,29 +125,11 @@
     </item>
     
     <item>
-      <title>Probability</title>
-      <link>https://hambaobao.github.io/tags/probability/</link>
-      <pubDate>Thu, 25 Mar 2021 11:37:02 +0800</pubDate>
-      
-      <guid>https://hambaobao.github.io/tags/probability/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>事件</title>
       <link>https://hambaobao.github.io/tags/%E4%BA%8B%E4%BB%B6/</link>
       <pubDate>Thu, 25 Mar 2021 11:37:02 +0800</pubDate>
       
       <guid>https://hambaobao.github.io/tags/%E4%BA%8B%E4%BB%B6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>概率论</title>
-      <link>https://hambaobao.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/</link>
-      <pubDate>Thu, 25 Mar 2021 11:37:02 +0800</pubDate>
-      
-      <guid>https://hambaobao.github.io/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/</guid>
       <description></description>
     </item>
     
