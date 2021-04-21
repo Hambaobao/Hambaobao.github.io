@@ -10,12 +10,17 @@
 <meta name="keywords" content="Probability, 概率论, 矩, 样本矩, 中心矩" />
 <meta name="description" content="矩 概率统计中用于描述样本的分布情况的数学量。
 &nbsp;
-原点矩 令 \(k\) 为正整数， \(a\) 为任意实数， \(X\) 为随机变量，则 \( \upsilon_k = E((X-a)^k) \) 称为随机变量对 \(a\) 的 \(k\) 阶矩。
-当 \(a = 0\) 时， \( \upsilon_k = E(X^k) \) 即为随机变量 \(X\) 的 \(k\) 阶原点矩。
+原点矩 令 \(k\) 为正整数， \(a\) 为任意实数， \(X\) 为随机变量，则
+\[ \upsilon_k = E((X-a)^k) \]
+称为随机变量对 \(a\) 的 \(k\) 阶矩。
+当 \(a = 0\) 时，
+\[ \upsilon_k = E(X^k) \]
+即为随机变量 \(X\) 的 \(k\) 阶原点矩。
 随机变量 \(X\) 的 一阶原点矩 即为其期望 \(E(X)\) ，也称为样本的中心。
 &nbsp;
-中心矩 对于一维随机变量 \(X\)，其 \(k\) 阶中心矩 \(\mu_k\) 为相对于 \(E(X)\) 的 \(k\) 阶矩： \( \mu_k = E((X-E(X)^k)) = \int_{-\infty}^{&#43;\infty} (x - \mu)^k f(x) dx \)
-意义  0 阶中心矩 \(\mu_0\) 恒为 \(1\) ； 1 阶中心距 \(\mu_1\) 恒为 \(0\) ； 2 阶中心距 \(\mu_2 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^2dx = E(X^2) - E(X)^2\) ，为 \(X\) 的方差 \(Var(X)\) ； 3 阶中心距 \(\mu_3 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^3 dx\) 为 \(X\) 的偏态； 4 阶中心距 \(\mu_4 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^4 dx\) 为 \(X\) 的峰态；  性质  中心矩具有平移不变性，对任意随机变量 \(X\) 和任意常数 \(c\) ，恒有：\(\mu_n(X&#43;c) = \mu_n(X)\) ； \(n\) 阶中心矩是 \(n\) 的齐次函数：\(\mu_n(cX) = c^n\mu_n(X)\) ；  &nbsp;">
+中心矩 对于一维随机变量 \(X\)，其 \(k\) 阶中心矩 \(\mu_k\) 为相对于 \(E(X)\) 的 \(k\) 阶矩：
+\[ \mu_k = E((X-E(X)^k)) = \int_{-\infty}^{&#43;\infty} (x - \mu)^k f(x) dx \]
+意义  0 阶中心矩 \[\mu_0\] 恒为 \[1\] ； 1 阶中心距 \[\mu_1\] 恒为 \[0\] ； 2 阶中心距 \[\mu_2 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^2dx = E(X^2) - E(X)^2\] ，为 \[X\] 的方差 \[Var(X)\] ； 3 阶中心距 \[\mu_3 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^3 dx\] 为 \[X\] 的偏态； 4 阶中心距 \[\mu_4 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^4 dx\] 为 \[X\] 的峰态；  性质  中心矩具有平移不变性，对任意随机变量 \[X\] 和任意常数 \[c\] ，恒有：\[\mu_n(X&#43;c) = \mu_n(X)\] ； \[n\] 阶中心矩是 \[n\] 的齐次函数：\[\mu_n(cX) = c^n\mu_n(X)\] ；  &nbsp;">
 <meta name="author" content="Hambaobao">
 <link rel="canonical" href="https://hambaobao.github.io/post/%E7%9F%A9/" />
 <link href="/assets/css/stylesheet.min.3b4ed2e80185ab356f837eda72c1debdea24ca2d707d78b82f2534624843aaa0.css" integrity="sha256-O07S6AGFqzVvg37acsHeveokyi1wfXi4LyU0YkhDqqA=" rel="preload stylesheet"
@@ -34,12 +39,17 @@
 <meta property="og:title" content="矩" />
 <meta property="og:description" content="矩 概率统计中用于描述样本的分布情况的数学量。
 &nbsp;
-原点矩 令 \(k\) 为正整数， \(a\) 为任意实数， \(X\) 为随机变量，则 \( \upsilon_k = E((X-a)^k) \) 称为随机变量对 \(a\) 的 \(k\) 阶矩。
-当 \(a = 0\) 时， \( \upsilon_k = E(X^k) \) 即为随机变量 \(X\) 的 \(k\) 阶原点矩。
+原点矩 令 \(k\) 为正整数， \(a\) 为任意实数， \(X\) 为随机变量，则
+\[ \upsilon_k = E((X-a)^k) \]
+称为随机变量对 \(a\) 的 \(k\) 阶矩。
+当 \(a = 0\) 时，
+\[ \upsilon_k = E(X^k) \]
+即为随机变量 \(X\) 的 \(k\) 阶原点矩。
 随机变量 \(X\) 的 一阶原点矩 即为其期望 \(E(X)\) ，也称为样本的中心。
 &nbsp;
-中心矩 对于一维随机变量 \(X\)，其 \(k\) 阶中心矩 \(\mu_k\) 为相对于 \(E(X)\) 的 \(k\) 阶矩： \( \mu_k = E((X-E(X)^k)) = \int_{-\infty}^{&#43;\infty} (x - \mu)^k f(x) dx \)
-意义  0 阶中心矩 \(\mu_0\) 恒为 \(1\) ； 1 阶中心距 \(\mu_1\) 恒为 \(0\) ； 2 阶中心距 \(\mu_2 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^2dx = E(X^2) - E(X)^2\) ，为 \(X\) 的方差 \(Var(X)\) ； 3 阶中心距 \(\mu_3 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^3 dx\) 为 \(X\) 的偏态； 4 阶中心距 \(\mu_4 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^4 dx\) 为 \(X\) 的峰态；  性质  中心矩具有平移不变性，对任意随机变量 \(X\) 和任意常数 \(c\) ，恒有：\(\mu_n(X&#43;c) = \mu_n(X)\) ； \(n\) 阶中心矩是 \(n\) 的齐次函数：\(\mu_n(cX) = c^n\mu_n(X)\) ；  &nbsp;" />
+中心矩 对于一维随机变量 \(X\)，其 \(k\) 阶中心矩 \(\mu_k\) 为相对于 \(E(X)\) 的 \(k\) 阶矩：
+\[ \mu_k = E((X-E(X)^k)) = \int_{-\infty}^{&#43;\infty} (x - \mu)^k f(x) dx \]
+意义  0 阶中心矩 \[\mu_0\] 恒为 \[1\] ； 1 阶中心距 \[\mu_1\] 恒为 \[0\] ； 2 阶中心距 \[\mu_2 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^2dx = E(X^2) - E(X)^2\] ，为 \[X\] 的方差 \[Var(X)\] ； 3 阶中心距 \[\mu_3 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^3 dx\] 为 \[X\] 的偏态； 4 阶中心距 \[\mu_4 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^4 dx\] 为 \[X\] 的峰态；  性质  中心矩具有平移不变性，对任意随机变量 \[X\] 和任意常数 \[c\] ，恒有：\[\mu_n(X&#43;c) = \mu_n(X)\] ； \[n\] 阶中心矩是 \[n\] 的齐次函数：\[\mu_n(cX) = c^n\mu_n(X)\] ；  &nbsp;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hambaobao.github.io/post/%E7%9F%A9/" />
 <meta property="article:published_time" content="2021-04-21T15:44:11+08:00" />
@@ -48,12 +58,17 @@
 <meta name="twitter:title" content="矩"/>
 <meta name="twitter:description" content="矩 概率统计中用于描述样本的分布情况的数学量。
 &nbsp;
-原点矩 令 \(k\) 为正整数， \(a\) 为任意实数， \(X\) 为随机变量，则 \( \upsilon_k = E((X-a)^k) \) 称为随机变量对 \(a\) 的 \(k\) 阶矩。
-当 \(a = 0\) 时， \( \upsilon_k = E(X^k) \) 即为随机变量 \(X\) 的 \(k\) 阶原点矩。
+原点矩 令 \(k\) 为正整数， \(a\) 为任意实数， \(X\) 为随机变量，则
+\[ \upsilon_k = E((X-a)^k) \]
+称为随机变量对 \(a\) 的 \(k\) 阶矩。
+当 \(a = 0\) 时，
+\[ \upsilon_k = E(X^k) \]
+即为随机变量 \(X\) 的 \(k\) 阶原点矩。
 随机变量 \(X\) 的 一阶原点矩 即为其期望 \(E(X)\) ，也称为样本的中心。
 &nbsp;
-中心矩 对于一维随机变量 \(X\)，其 \(k\) 阶中心矩 \(\mu_k\) 为相对于 \(E(X)\) 的 \(k\) 阶矩： \( \mu_k = E((X-E(X)^k)) = \int_{-\infty}^{&#43;\infty} (x - \mu)^k f(x) dx \)
-意义  0 阶中心矩 \(\mu_0\) 恒为 \(1\) ； 1 阶中心距 \(\mu_1\) 恒为 \(0\) ； 2 阶中心距 \(\mu_2 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^2dx = E(X^2) - E(X)^2\) ，为 \(X\) 的方差 \(Var(X)\) ； 3 阶中心距 \(\mu_3 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^3 dx\) 为 \(X\) 的偏态； 4 阶中心距 \(\mu_4 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^4 dx\) 为 \(X\) 的峰态；  性质  中心矩具有平移不变性，对任意随机变量 \(X\) 和任意常数 \(c\) ，恒有：\(\mu_n(X&#43;c) = \mu_n(X)\) ； \(n\) 阶中心矩是 \(n\) 的齐次函数：\(\mu_n(cX) = c^n\mu_n(X)\) ；  &nbsp;"/>
+中心矩 对于一维随机变量 \(X\)，其 \(k\) 阶中心矩 \(\mu_k\) 为相对于 \(E(X)\) 的 \(k\) 阶矩：
+\[ \mu_k = E((X-E(X)^k)) = \int_{-\infty}^{&#43;\infty} (x - \mu)^k f(x) dx \]
+意义  0 阶中心矩 \[\mu_0\] 恒为 \[1\] ； 1 阶中心距 \[\mu_1\] 恒为 \[0\] ； 2 阶中心距 \[\mu_2 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^2dx = E(X^2) - E(X)^2\] ，为 \[X\] 的方差 \[Var(X)\] ； 3 阶中心距 \[\mu_3 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^3 dx\] 为 \[X\] 的偏态； 4 阶中心距 \[\mu_4 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^4 dx\] 为 \[X\] 的峰态；  性质  中心矩具有平移不变性，对任意随机变量 \[X\] 和任意常数 \[c\] ，恒有：\[\mu_n(X&#43;c) = \mu_n(X)\] ； \[n\] 阶中心矩是 \[n\] 的齐次函数：\[\mu_n(cX) = c^n\mu_n(X)\] ；  &nbsp;"/>
 
 <script type="application/ld+json">
 {
@@ -61,11 +76,11 @@
   "@type": "BlogPosting",
   "headline": "矩",
   "name": "矩",
-  "description": "矩 概率统计中用于描述样本的分布情况的数学量。\n\u0026amp;nbsp;\n原点矩 令 \\(k\\) 为正整数， \\(a\\) 为任意实数， \\(X\\) 为随机变量，则 \\( \\upsilon_k = E((X-a)^k) \\) 称为随机变量对 \\(a\\) 的 \\(k\\) 阶矩。\n当 \\(a = 0\\) 时， \\( \\upsilon_k = E(X^k) \\) …",
+  "description": "矩 概率统计中用于描述样本的分布情况的数学量。\n\u0026amp;nbsp;\n原点矩 令 \\(k\\) 为正整数， \\(a\\) 为任意实数， \\(X\\) 为随机变量，则\n\\[ \\upsilon_k = E((X-a)^k) \\]\n称为随机变量对 \\(a\\) 的 \\(k\\) 阶矩。\n当 \\(a = 0\\) 时，\n\\[ \\upsilon_k = E(X^k) \\] …",
   "keywords": [
     "Probability", "概率论", "矩", "样本矩", "中心矩"
   ],
-  "articleBody": "矩 概率统计中用于描述样本的分布情况的数学量。\n 原点矩 令 \\(k\\) 为正整数， \\(a\\) 为任意实数， \\(X\\) 为随机变量，则 \\( \\upsilon_k = E((X-a)^k) \\) 称为随机变量对 \\(a\\) 的 \\(k\\) 阶矩。\n当 \\(a = 0\\) 时， \\( \\upsilon_k = E(X^k) \\) 即为随机变量 \\(X\\) 的 \\(k\\) 阶原点矩。\n随机变量 \\(X\\) 的 一阶原点矩 即为其期望 \\(E(X)\\) ，也称为样本的中心。\n 中心矩 对于一维随机变量 \\(X\\)，其 \\(k\\) 阶中心矩 \\(\\mu_k\\) 为相对于 \\(E(X)\\) 的 \\(k\\) 阶矩： \\( \\mu_k = E((X-E(X)^k)) = \\int_{-\\infty}^{+\\infty} (x - \\mu)^k f(x) dx \\)\n意义  0 阶中心矩 \\(\\mu_0\\) 恒为 \\(1\\) ； 1 阶中心距 \\(\\mu_1\\) 恒为 \\(0\\) ； 2 阶中心距 \\(\\mu_2 = \\int_{-\\infty}^{+\\infty}[x - E(x)]^2dx = E(X^2) - E(X)^2\\) ，为 \\(X\\) 的方差 \\(Var(X)\\) ； 3 阶中心距 \\(\\mu_3 = \\int_{-\\infty}^{+\\infty}[x - E(x)]^3 dx\\) 为 \\(X\\) 的偏态； 4 阶中心距 \\(\\mu_4 = \\int_{-\\infty}^{+\\infty}[x - E(x)]^4 dx\\) 为 \\(X\\) 的峰态；  性质  中心矩具有平移不变性，对任意随机变量 \\(X\\) 和任意常数 \\(c\\) ，恒有：\\(\\mu_n(X+c) = \\mu_n(X)\\) ； \\(n\\) 阶中心矩是 \\(n\\) 的齐次函数：\\(\\mu_n(cX) = c^n\\mu_n(X)\\) ；   样本距  样本的 \\(k\\) 阶原点矩： \\(\\alpha_k = \\frac{1}{n} \\sum_{i=1}^{n}X_i^k\\) ； 样本的 \\(k\\) 阶中心矩： \\(\\beta_k = \\frac{1}{n} \\sum_{i=1}^{n} [X_i - E(X)]^k\\) ；  ",
+  "articleBody": "矩 概率统计中用于描述样本的分布情况的数学量。\n 原点矩 令 \\(k\\) 为正整数， \\(a\\) 为任意实数， \\(X\\) 为随机变量，则\n\\[ \\upsilon_k = E((X-a)^k) \\]\n称为随机变量对 \\(a\\) 的 \\(k\\) 阶矩。\n当 \\(a = 0\\) 时，\n\\[ \\upsilon_k = E(X^k) \\]\n即为随机变量 \\(X\\) 的 \\(k\\) 阶原点矩。\n随机变量 \\(X\\) 的 一阶原点矩 即为其期望 \\(E(X)\\) ，也称为样本的中心。\n 中心矩 对于一维随机变量 \\(X\\)，其 \\(k\\) 阶中心矩 \\(\\mu_k\\) 为相对于 \\(E(X)\\) 的 \\(k\\) 阶矩：\n\\[ \\mu_k = E((X-E(X)^k)) = \\int_{-\\infty}^{+\\infty} (x - \\mu)^k f(x) dx \\]\n意义  0 阶中心矩 \\[\\mu_0\\] 恒为 \\[1\\] ； 1 阶中心距 \\[\\mu_1\\] 恒为 \\[0\\] ； 2 阶中心距 \\[\\mu_2 = \\int_{-\\infty}^{+\\infty}[x - E(x)]^2dx = E(X^2) - E(X)^2\\] ，为 \\[X\\] 的方差 \\[Var(X)\\] ； 3 阶中心距 \\[\\mu_3 = \\int_{-\\infty}^{+\\infty}[x - E(x)]^3 dx\\] 为 \\[X\\] 的偏态； 4 阶中心距 \\[\\mu_4 = \\int_{-\\infty}^{+\\infty}[x - E(x)]^4 dx\\] 为 \\[X\\] 的峰态；  性质  中心矩具有平移不变性，对任意随机变量 \\[X\\] 和任意常数 \\[c\\] ，恒有：\\[\\mu_n(X+c) = \\mu_n(X)\\] ； \\[n\\] 阶中心矩是 \\[n\\] 的齐次函数：\\[\\mu_n(cX) = c^n\\mu_n(X)\\] ；   样本距  样本的 \\(k\\) 阶原点矩： \\(\\alpha_k = \\frac{1}{n} \\sum_{i=1}^{n}X_i^k\\) ； 样本的 \\(k\\) 阶中心矩： \\(\\beta_k = \\frac{1}{n} \\sum_{i=1}^{n} [X_i - E(X)]^k\\) ；  ",
   "wordCount" : "155",
   "inLanguage": "en",
   "datePublished": "2021-04-21T15:44:11+08:00",
@@ -216,17 +231,21 @@ April 21, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Hambaobao
 
 <h3 id="原点矩">原点矩<a hidden class="anchor" aria-hidden="true" href="#原点矩">#</a></h3>
 
-<p>令 <span  class="math">\(k\)</span> 为正整数， <span  class="math">\(a\)</span> 为任意实数， <span  class="math">\(X\)</span> 为随机变量，则
-<span  class="math">\(
-\upsilon_k = E((X-a)^k)
-\)</span>
-称为随机变量对 <span  class="math">\(a\)</span> 的 <span  class="math">\(k\)</span> 阶矩。</p>
+<p>令 <span  class="math">\(k\)</span> 为正整数， <span  class="math">\(a\)</span> 为任意实数， <span  class="math">\(X\)</span> 为随机变量，则</p>
 
-<p>当 <span  class="math">\(a = 0\)</span> 时，
-<span  class="math">\(
+<p><span  class="math">\[
+\upsilon_k = E((X-a)^k)
+\]</span></p>
+
+<p>称为随机变量对 <span  class="math">\(a\)</span> 的 <span  class="math">\(k\)</span> 阶矩。</p>
+
+<p>当 <span  class="math">\(a = 0\)</span> 时，</p>
+
+<p><span  class="math">\[
 \upsilon_k = E(X^k)
-\)</span>
- 即为随机变量 <span  class="math">\(X\)</span> 的 <span  class="math">\(k\)</span> 阶<strong>原点矩</strong>。</p>
+\]</span></p>
+
+<p>即为随机变量 <span  class="math">\(X\)</span> 的 <span  class="math">\(k\)</span> 阶<strong>原点矩</strong>。</p>
 
 <p>随机变量 <span  class="math">\(X\)</span> 的 <strong>一阶原点矩</strong> 即为其期望 <span  class="math">\(E(X)\)</span>  ，也称为样本的<strong>中心</strong>。</p>
 
@@ -234,26 +253,27 @@ April 21, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Hambaobao
 
 <h3 id="中心矩">中心矩<a hidden class="anchor" aria-hidden="true" href="#中心矩">#</a></h3>
 
-<p>对于一维随机变量 <span  class="math">\(X\)</span>，其 <span  class="math">\(k\)</span> 阶<strong>中心矩</strong> <span  class="math">\(\mu_k\)</span> 为相对于 <span  class="math">\(E(X)\)</span> 的 <span  class="math">\(k\)</span> 阶矩：
-<span  class="math">\(
+<p>对于一维随机变量 <span  class="math">\(X\)</span>，其 <span  class="math">\(k\)</span> 阶<strong>中心矩</strong> <span  class="math">\(\mu_k\)</span> 为相对于 <span  class="math">\(E(X)\)</span> 的 <span  class="math">\(k\)</span> 阶矩：</p>
+
+<p><span  class="math">\[
 \mu_k = E((X-E(X)^k)) = \int_{-\infty}^{+\infty} (x - \mu)^k f(x) dx
-\)</span></p>
+\]</span></p>
 
 <h4 id="意义">意义<a hidden class="anchor" aria-hidden="true" href="#意义">#</a></h4>
 
 <ul>
-<li>0 阶中心矩 <span  class="math">\(\mu_0\)</span> 恒为 <span  class="math">\(1\)</span> ；</li>
-<li>1 阶中心距 <span  class="math">\(\mu_1\)</span> 恒为 <span  class="math">\(0\)</span> ；</li>
-<li>2 阶中心距 <span  class="math">\(\mu_2 = \int_{-\infty}^{+\infty}[x - E(x)]^2dx = E(X^2) - E(X)^2\)</span> ，为 <span  class="math">\(X\)</span> 的方差 <span  class="math">\(Var(X)\)</span> ；</li>
-<li>3 阶中心距 <span  class="math">\(\mu_3 = \int_{-\infty}^{+\infty}[x - E(x)]^3 dx\)</span> 为 <span  class="math">\(X\)</span> 的偏态；</li>
-<li>4 阶中心距 <span  class="math">\(\mu_4 = \int_{-\infty}^{+\infty}[x - E(x)]^4 dx\)</span> 为 <span  class="math">\(X\)</span> 的峰态；</li>
+<li>0 阶中心矩 <span  class="math">\[\mu_0\]</span> 恒为 <span  class="math">\[1\]</span> ；</li>
+<li>1 阶中心距 <span  class="math">\[\mu_1\]</span> 恒为 <span  class="math">\[0\]</span> ；</li>
+<li>2 阶中心距 <span  class="math">\[\mu_2 = \int_{-\infty}^{+\infty}[x - E(x)]^2dx = E(X^2) - E(X)^2\]</span> ，为 <span  class="math">\[X\]</span> 的方差 <span  class="math">\[Var(X)\]</span> ；</li>
+<li>3 阶中心距 <span  class="math">\[\mu_3 = \int_{-\infty}^{+\infty}[x - E(x)]^3 dx\]</span> 为 <span  class="math">\[X\]</span> 的偏态；</li>
+<li>4 阶中心距 <span  class="math">\[\mu_4 = \int_{-\infty}^{+\infty}[x - E(x)]^4 dx\]</span> 为 <span  class="math">\[X\]</span> 的峰态；</li>
 </ul>
 
 <h4 id="性质">性质<a hidden class="anchor" aria-hidden="true" href="#性质">#</a></h4>
 
 <ul>
-<li>中心矩具有平移不变性，对任意随机变量 <span  class="math">\(X\)</span> 和任意常数 <span  class="math">\(c\)</span> ，恒有：<span  class="math">\(\mu_n(X+c) = \mu_n(X)\)</span> ；</li>
-<li><span  class="math">\(n\)</span> 阶中心矩是 <span  class="math">\(n\)</span> 的齐次函数：<span  class="math">\(\mu_n(cX) = c^n\mu_n(X)\)</span> ；</li>
+<li>中心矩具有平移不变性，对任意随机变量 <span  class="math">\[X\]</span> 和任意常数 <span  class="math">\[c\]</span> ，恒有：<span  class="math">\[\mu_n(X+c) = \mu_n(X)\]</span> ；</li>
+<li><span  class="math">\[n\]</span> 阶中心矩是 <span  class="math">\[n\]</span> 的齐次函数：<span  class="math">\[\mu_n(cX) = c^n\mu_n(X)\]</span> ；</li>
 </ul>
 
 <p>&nbsp;</p>
