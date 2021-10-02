@@ -59,8 +59,8 @@
   "keywords": [
     "Linear Algebra", "SVM"
   ],
-  "articleBody": "结论 N维空间中点到超平面的距离为：\n\\[ d = \\frac{\\lvert \\vec{w}^T \\vec{x}+b\\rvert}{\\lvert\\lvert w \\rvert\\rvert} \\]\n证明 前置证明 证明： \\(w\\) 是 \\(\\vec{w}^T \\vec{x} + b = 0\\) 这个平面的法向量。\n设 \\(\\vec{w}^T \\vec{x} + b = 0\\) 张成的平面为 \\(S\\)， \\(A\\)、\\(B\\) 为平面 \\(S\\) 上的任意两点，则 \\(\\vec{OA}\\) 和 \\(\\vec{OB}\\) 为从原点指向 \\(A\\)、\\(B\\) 两点的向量，因此 \\(\\vec{OA} - \\vec{OB} = \\vec{BA}\\) 为平面 \\(S\\) 中的一个向量。由于 \\(A\\) 和 \\(B\\) 的任意性，\\(\\vec{BA}\\) 可以表示平面 \\(S\\) 中的任意一个向量。\n设 \\(A\\) 和 \\(B\\) 对应的点分别为 \\(\\vec{x}_1\\) 和 \\(\\vec{x}_2\\) ，有\n\\[ \\begin{aligned} \\vec{w}^T \\vec{x}_1 + b \u0026= 0 \\\\ \\vec{w}^T \\vec{x}_2 + b \u0026= 0 \\\\ \\end{aligned} \\]\n因此，\n\\[ \\vec{w}^T (\\vec{x}_1 - \\vec{x}_2) = 0 \\]\n即，\\(\\vec{w}^T\\) 与平面 \\(S\\) 内的任意向量 \\(\\vec{BA}\\) 的内积为 \\(0\\) ， 因此，\\(\\vec{w}\\) 是平面 \\(S\\) 的法向量。\n正式证明 设 \\(M\\) 为空间中任意一点，对应坐标为 \\(\\vec{x}\\) ，\\(M\\) 到原点 \\(O\\) 的连线与平面 \\(S\\) 的交点为 \\(Q\\)，对应坐标为 \\(\\vec{y}\\)，则 \\(M\\) 到平面 \\(S\\) 的距离 \\(d\\)，即为 \\(\\vec{QM}\\) 在法向量 \\(\\vec{w}\\) 上的投影长度。\n\\[ d = \\frac{\\lvert  \\rvert}{\\lvert\\vert \\vec{w} \\rvert\\rvert} \\]\n其中， \\(\\vec{QM} = \\vec{OM} - \\vec{OQ} = \\vec{x} - \\vec{y}\\) ，且 \\(Q\\) 在平面 \\(S\\) 中，因此，\n\\[ \\begin{aligned} \u0026 \\vec{w}^T \\vec{y} + b = 0 \\\\ \u0026 \\vec{w}^T \\vec{y} = -b \\\\ \\end{aligned} \\]\n又，\n$$ \\begin{aligned} \\lvert  \\rvert \u0026= \\lvert \\vec{w}^T (\\vec{x} - \\vec{y}) \\rvert \\\n \u0026= \\lvert \\vec{w}^T \\vec{x} - \\vec{w}^T \\vec{y} \\rvert \\\\ \u0026= \\lvert \\vec{w}^T \\vec{x} + b \\rvert \\end{aligned} $$\n因此，点 \\(M\\) 到平面 \\(S\\) 的距离为，\n\\[ d = \\frac{\\lvert \\vec{w}^T \\vec{x} + b \\rvert}{\\lvert\\lvert \\vec{w} \\rvert\\rvert} \\]\n",
-  "wordCount" : "217",
+  "articleBody": "结论 N维空间中点到超平面的距离为：\n\\[ d = \\frac{\\lvert \\vec{w}^T \\vec{x}+b\\rvert}{\\lvert\\lvert w \\rvert\\rvert} \\]\n证明 前置证明 证明： \\(w\\) 是 \\(\\vec{w}^T \\vec{x} + b = 0\\) 这个平面的法向量。\n设 \\(\\vec{w}^T \\vec{x} + b = 0\\) 张成的平面为 \\(S\\)， \\(A\\)、\\(B\\) 为平面 \\(S\\) 上的任意两点，则 \\(\\vec{OA}\\) 和 \\(\\vec{OB}\\) 为从原点指向 \\(A\\)、\\(B\\) 两点的向量，因此 \\(\\vec{OA} - \\vec{OB} = \\vec{BA}\\) 为平面 \\(S\\) 中的一个向量。由于 \\(A\\) 和 \\(B\\) 的任意性，\\(\\vec{BA}\\) 可以表示平面 \\(S\\) 中的任意一个向量。\n设 \\(A\\) 和 \\(B\\) 对应的点分别为 \\(\\vec{x}_1\\) 和 \\(\\vec{x}_2\\) ，有\n\\[ \\begin{aligned} \\vec{w}^T \\vec{x}_1 + b \u0026= 0 \\\\ \\vec{w}^T \\vec{x}_2 + b \u0026= 0 \\\\ \\end{aligned} \\]\n因此，\n\\[ \\vec{w}^T (\\vec{x}_1 - \\vec{x}_2) = 0 \\]\n即，\\(\\vec{w}^T\\) 与平面 \\(S\\) 内的任意向量 \\(\\vec{BA}\\) 的内积为 \\(0\\) ， 因此，\\(\\vec{w}\\) 是平面 \\(S\\) 的法向量。\n正式证明 设 \\(M\\) 为空间中任意一点，对应坐标为 \\(\\vec{x}\\) ，\\(M\\) 到原点 \\(O\\) 的连线与平面 \\(S\\) 的交点为 \\(Q\\)，对应坐标为 \\(\\vec{y}\\)，则 \\(M\\) 到平面 \\(S\\) 的距离 \\(d\\)，即为 \\(\\vec{QM}\\) 在法向量 \\(\\vec{w}\\) 上的投影长度。\n\\[ d = \\frac{\\lvert  \\rvert}{\\lvert\\vert \\vec{w} \\rvert\\rvert} \\]\n其中， \\(\\vec{QM} = \\vec{OM} - \\vec{OQ} = \\vec{x} - \\vec{y}\\) ，且 \\(Q\\) 在平面 \\(S\\) 中，因此，\n\\[ \\begin{aligned} \u0026 \\vec{w}^T \\vec{y} + b = 0 \\\\ \u0026 \\vec{w}^T \\vec{y} = -b \\\\ \\end{aligned} \\]\n又，\n\\[ \\begin{aligned} \\lvert  \\rvert \u0026= \\lvert \\vec{w}^T (\\vec{x} - \\vec{y}) \\rvert \\\\ \u0026= \\lvert \\vec{w}^T \\vec{x} - \\vec{w}^T \\vec{y} \\rvert \\\\ \u0026= \\lvert \\vec{w}^T \\vec{x} + b \\rvert \\end{aligned} \\]\n因此，点 \\(M\\) 到平面 \\(S\\) 的距离为，\n\\[ d = \\frac{\\lvert \\vec{w}^T \\vec{x} + b \\rvert}{\\lvert\\lvert \\vec{w} \\rvert\\rvert} \\]\n",
+  "wordCount" : "216",
   "inLanguage": "en",
   "datePublished": "2021-10-02T16:31:17+08:00",
   "dateModified": "2021-10-02T16:31:17+08:00",
@@ -252,13 +252,13 @@ d = \frac{\lvert <\vec{w},\vec{QM}> \rvert}{\lvert\vert \vec{w} \rvert\rvert}
 
 <p>又，</p>
 
-<p>$$
+<p><span  class="math">\[
 \begin{aligned}
-\lvert &lt;\vec{w},\vec{QM}&gt; \rvert &amp;= \lvert \vec{w}^T (\vec{x} - \vec{y}) \rvert \</p>
-<pre><code>                    &amp;= \lvert \vec{w}^T \vec{x} - \vec{w}^T \vec{y} \rvert \\
-                    &amp;= \lvert \vec{w}^T \vec{x} + b \rvert</code></pre>
-<p>\end{aligned}
-$$</p>
+\lvert <\vec{w},\vec{QM}> \rvert &= \lvert \vec{w}^T (\vec{x} - \vec{y}) \rvert \\
+&= \lvert \vec{w}^T \vec{x} - \vec{w}^T \vec{y} \rvert \\
+&= \lvert \vec{w}^T \vec{x} + b \rvert
+\end{aligned}
+\]</span></p>
 
 <p>因此，点 <span  class="math">\(M\)</span> 到平面 <span  class="math">\(S\)</span> 的距离为，</p>
 
