@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Hambaobao</title>
+    <link>https://hambaobao.github.io/categories/docker/</link>
+    <description>Recent content in docker on Hambaobao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 May 2023 10:02:48 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在服务器上部署docker配置深度学习环境</title>
+      <link>https://hambaobao.github.io/post/%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2docker%E9%85%8D%E7%BD%AE%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Wed, 10 May 2023 10:02:48 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/post/%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2docker%E9%85%8D%E7%BD%AE%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83/</guid>
+      <description>在服务器上部署docker配置深度学习环境 Step 0 Install Nvidia Driver on Server 首先需要确保在服务器上安装了 Nvidia 的显卡驱动，nvidia-smi 命令要能用； 查看服务器显卡型号：lspci | grep -i nvidia ； Nvidia 驱动下载地址：click ； Step 1 Setting up Docker 安装 docker： sudo apt install docker.io ； 启动 docker： sudo systemctl start docker ； Step 2 Setting up NVIDIA Container Toolkit 在终端执行下列指令，直接复制回车:
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \ &amp;amp;&amp;amp; curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \ &amp;amp;&amp;amp; curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \ sed &amp;#39;s#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -13,11 +13,8 @@
       <pubDate>Fri, 26 Mar 2021 13:37:17 +0800</pubDate>
       
       <guid>https://hambaobao.github.io/post/md5%E8%A7%A3%E5%86%B3gitalk%E6%8A%A5%E9%94%99errorvalidation-failed/</guid>
-      <description>环境描述  Blog 框架：Hugo； Blog 主题：PaperMod； 本文发布时间：2021-03-26  &amp;nbsp;
-问题描述 由于 Github 限制 label 长度不能超过 \(50\) ，所以当 Blog 名称长度超过 \(50\) 后，Gitalk 就不能成功初始化 issue ，开启评论时提示错误信息为：Error:Validation Failed 。
-&amp;nbsp;
+      <description>环境描述 Blog 框架：Hugo； Blog 主题：PaperMod； 本文发布时间：2021-03-26 问题描述 由于 Github 限制 label 长度不能超过 $$50$$ ，所以当 Blog 名称长度超过 $$50$$ 后，Gitalk 就不能成功初始化 issue ，开启评论时提示错误信息为：Error:Validation Failed 。
 解决方法 1. 找到一个 JS 实现的 md5 脚本 比如这个： JavaScript- MD5，我使用的是该仓库下的 js/md5.min.js 这个文件，把它下载下来，然后放到自己的网站的 js 脚本目录下，比如我的是 https://hambaobao.github.io/assets/js/ ，此处为生成静态网站文件后上传到 Github 的目录位置，至于在本地的时候放在哪里，由于不同框架和主题不同请读者自行判断，我是放到了本地的 /public/assets/js/ 下。
-&amp;nbsp;
 2. 修改 Gitalk 配置文件 简单的引入md5 脚本，并修改 Gitalk 配置中的 id 即可。
 原文件：
 {{ if .Site.Params.enableGitalk }} &amp;lt;div id=&amp;#34;gitalk-container&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; const gitalk = new Gitalk({ clientID: &amp;#39;{{ .</description>
@@ -29,10 +26,9 @@
       <pubDate>Thu, 25 Mar 2021 19:25:17 +0800</pubDate>
       
       <guid>https://hambaobao.github.io/post/blog-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</guid>
-      <description>Blog 注意事项   行内的数学公式需要使用两个 $$ 符号包裹，行间的数学公式需要使用两个 $$ 符号包裹，且美元符号之前和之后需要空一行，可以使用 Typora 编写后再使用 vscode 将所有单个 $ 符号替换为$$ 两个美元符号，然后再网站根目录下执行 ./deploy.sh 发布更新网站内容；Reference
-  Typora 中的空白行不会在网页中出现，若希望在网页出现像使用 Typora 打开 .md 文件那样的空白行，需要在 Typora 中的空白行使用 &amp;amp;nbsp; 占位；Reference
-  Updating；
-  </description>
+      <description>Blog 注意事项 行内的数学公式需要使用两个 $$ 符号包裹，行间的数学公式需要使用两个 $$ 符号包裹，且美元符号之前和之后需要空一行，可以使用 Typora 编写后再使用 vscode 将所有单个 $ 符号替换为$$ 两个美元符号，然后再网站根目录下执行 ./deploy.sh 发布更新网站内容；Reference
+Typora 中的空白行不会在网页中出现，若希望在网页出现像使用 Typora 打开 .md 文件那样的空白行，需要在 Typora 中的空白行使用 &amp;amp;nbsp; 占位；Reference
+Updating；</description>
     </item>
     
     <item>

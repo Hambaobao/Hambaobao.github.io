@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>在服务器上部署docker配置深度学习环境 | Hambaobao</title>
+
+<meta name="keywords" content="docker, linux" />
+<meta name="description" content="在服务器上部署docker配置深度学习环境 Step 0 Install Nvidia Driver on Server 首先需要确保在服务器上安装了 Nvidia 的显卡驱动，nvidia-smi 命令要能用； 查看服务器显卡型号：lspci | grep -i nvidia ； Nvidia 驱动下载地址：click ； Step 1 Setting up Docker 安装 docker： sudo apt install docker.io ； 启动 docker： sudo systemctl start docker ； Step 2 Setting up NVIDIA Container Toolkit 在终端执行下列指令，直接复制回车:
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \ &amp;&amp; curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \ &amp;&amp; curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \ sed &#39;s#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.">
+<meta name="author" content="Hambaobao">
+<link rel="canonical"
+    href="https://hambaobao.github.io/post/%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2docker%E9%85%8D%E7%BD%AE%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83/" />
+<link href="/assets/css/stylesheet.min.608aafc4a643533f4ec6967b44e1560dd8623d1e10e96bc196999b8194900739.css" integrity="sha256-YIqvxKZDUz9OxpZ7ROFWDdhiPR4Q6WvBlpmbgZSQBzk=" rel="preload stylesheet"
+    as="style">
+
+<link rel="icon" href="https://hambaobao.github.io/%20favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hambaobao.github.io/%20favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hambaobao.github.io/%20favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hambaobao.github.io/%20apple-touch-icon.png">
+<link rel="mask-icon" href="https://hambaobao.github.io/%20safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.111.3">
+
+
+<meta property="og:title" content="在服务器上部署docker配置深度学习环境" />
+<meta property="og:description" content="在服务器上部署docker配置深度学习环境 Step 0 Install Nvidia Driver on Server 首先需要确保在服务器上安装了 Nvidia 的显卡驱动，nvidia-smi 命令要能用； 查看服务器显卡型号：lspci | grep -i nvidia ； Nvidia 驱动下载地址：click ； Step 1 Setting up Docker 安装 docker： sudo apt install docker.io ； 启动 docker： sudo systemctl start docker ； Step 2 Setting up NVIDIA Container Toolkit 在终端执行下列指令，直接复制回车:
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \ &amp;&amp; curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \ &amp;&amp; curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \ sed &#39;s#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hambaobao.github.io/post/%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2docker%E9%85%8D%E7%BD%AE%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83/" />
+<meta property="article:published_time" content="2023-05-10T10:02:48+08:00" />
+<meta property="article:modified_time" content="2023-05-10T10:02:48+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="在服务器上部署docker配置深度学习环境"/>
+<meta name="twitter:description" content="在服务器上部署docker配置深度学习环境 Step 0 Install Nvidia Driver on Server 首先需要确保在服务器上安装了 Nvidia 的显卡驱动，nvidia-smi 命令要能用； 查看服务器显卡型号：lspci | grep -i nvidia ； Nvidia 驱动下载地址：click ； Step 1 Setting up Docker 安装 docker： sudo apt install docker.io ； 启动 docker： sudo systemctl start docker ； Step 2 Setting up NVIDIA Container Toolkit 在终端执行下列指令，直接复制回车:
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \ &amp;&amp; curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \ &amp;&amp; curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \ sed &#39;s#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring."/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "在服务器上部署docker配置深度学习环境",
+  "name": "在服务器上部署docker配置深度学习环境",
+  "description": "在服务器上部署docker配置深度学习环境 Step 0 Install Nvidia Driver on Server 首先需要确保在服务器上安装了 Nvidia 的显卡驱动，nvidia-smi 命令要能用； 查看服务器显卡型号：lspci | grep -i nvidia ； Nvidia 驱动下载地址：click ； Step 1 Setting …",
+  "keywords": [
+    "docker", "linux"
+  ],
+  "articleBody": "在服务器上部署docker配置深度学习环境 Step 0 Install Nvidia Driver on Server 首先需要确保在服务器上安装了 Nvidia 的显卡驱动，nvidia-smi 命令要能用； 查看服务器显卡型号：lspci | grep -i nvidia ； Nvidia 驱动下载地址：click ； Step 1 Setting up Docker 安装 docker： sudo apt install docker.io ； 启动 docker： sudo systemctl start docker ； Step 2 Setting up NVIDIA Container Toolkit 在终端执行下列指令，直接复制回车:\ndistribution=$(. /etc/os-release;echo $ID$VERSION_ID) \\ \u0026\u0026 curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \\ \u0026\u0026 curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \\ sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \\ sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list 安装 Nvidia Container Toolkit：sudo apt install -y nvidia-container-toolkit ；\n配置 Docker 守护进程识别 Nvidia Container Runtime ：sudo nvidia-ctk runtime configure --runtime=docker ；\n重启 Docker，完成安装：sudo systemctl restart docker ；\n最后可以测试一下能否使用 cuda：sudo docker run --rm --runtime=nvidia --gpus all nvidia/cuda:11.6.2-base-ubuntu20.04 nvidia-smi ；\n成功的话会显示如下：\n+-----------------------------------------------------------------------------+ | NVIDIA-SMI 450.51.06 Driver Version: 450.51.06 CUDA Version: 11.0 | |-------------------------------+----------------------+----------------------+ | GPU Name Persistence-M| Bus-Id Disp.A | Volatile Uncorr. ECC | | Fan Temp Perf Pwr:Usage/Cap| Memory-Usage | GPU-Util Compute M. | | | | MIG M. | |===============================+======================+======================| | 0 Tesla T4 On | 00000000:00:1E.0 Off | 0 | | N/A 34C P8 9W / 70W | 0MiB / 15109MiB | 0% Default | | | | N/A | +-------------------------------+----------------------+----------------------+ +-----------------------------------------------------------------------------+ | Processes: | | GPU GI CI PID Type Process name GPU Memory | | ID ID Usage | |=============================================================================| | No running processes found | +-----------------------------------------------------------------------------+ 更多细节可参考 Nvidia 官方文档 ；\nStep 3 Pull Image 下载配有 pytorch、cuda、cudnn 的镜像：docker pull hambaobao/dlb:pytorch2.0.0-cuda11.7-cudnn8-v1.0 ； 可以自己下载 Pytorch 或者 Nvidia 提供的更原始的镜像使用： Pytorch：click ； Nvidia：click ； Step 4 Create a container example：docker run -itd --name s87d --hostname s87d --gpus all -v /data0:/data0 -v /data1:/data1 -v /data2:/data2 -v /home/:/home/ -p 2094:2094 -p 4382:4382 hambaobao/dlb:pytorch2.0.0-cuda11.7-cudnn8-v1.0 ； --name：容器的名字； --hostname：容器内的主机名； --gpus：！！！非常关键！！！，没有这个选项容器内无法访问 GPUs ； -v：挂载目录，建议挂载所有 data 目录和 home 目录； -p：端口映射，用于 ssh 和 proxy control； 一个最后是使用的镜像； ",
+  "wordCount" : "287",
+  "inLanguage": "en",
+  "datePublished": "2023-05-10T10:02:48+08:00",
+  "dateModified": "2023-05-10T10:02:48+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Hambaobao"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hambaobao.github.io/post/%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2docker%E9%85%8D%E7%BD%AE%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Hambaobao",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hambaobao.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        .theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://hambaobao.github.io" accesskey="h" title="Hambaobao (Alt + H)">Hambaobao</a>
+            <span class="logo-switches">
+                <a id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </a>
+                
+                
+            </span>
+        </div>
+        <ul id="menu" onscroll="menu_on_scroll()">
+            <li>
+                <a href="https://hambaobao.github.io/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://hambaobao.github.io/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://hambaobao.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://hambaobao.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://hambaobao.github.io/search/" title="🔍 (Alt &#43; /)" accesskey=/>
+                    <span>🔍</span>
+                </a>
+            </li></ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+<div class="breadcrumbs">
+
+    <a href="https://hambaobao.github.io">Home</a>&nbsp;»&nbsp;<a href="https://hambaobao.github.io/post/">Posts</a>
+</div>
+
+    <h1 class="post-title">
+      在服务器上部署docker配置深度学习环境
+    </h1>
+    <div class="post-meta">
+
+May 10, 2023&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Hambaobao
+
+</div>
+  </header> 
+
+  <div class="toc">
+    <details  open>
+      <summary accesskey="c" title="(Alt + C)">
+        <div class="details">Table of Contents</div>
+      </summary>
+      <div class="inner"><ul><li>
+        <a href="#%e5%9c%a8%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e9%83%a8%e7%bd%b2docker%e9%85%8d%e7%bd%ae%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e7%8e%af%e5%a2%83" aria-label="在服务器上部署docker配置深度学习环境">在服务器上部署docker配置深度学习环境</a><ul>
+            <li>
+        <a href="#step-0-install-nvidia-driver-on-server" aria-label="Step 0 Install Nvidia Driver on Server">Step 0 Install Nvidia Driver on Server</a></li><li>
+        <a href="#step-1-setting-up-docker" aria-label="Step 1 Setting up Docker">Step 1 Setting up Docker</a></li><li>
+        <a href="#step-2-setting-up-nvidia-container-toolkit" aria-label="Step 2 Setting up NVIDIA Container Toolkit">Step 2 Setting up NVIDIA Container Toolkit</a></li><li>
+        <a href="#step-3-pull-image" aria-label="Step 3 Pull Image">Step 3 Pull Image</a></li><li>
+        <a href="#step-4-create-a-container" aria-label="Step 4 Create a container">Step 4 Create a container</a></li></ul>
+</li></ul>
+      </div>
+    </details>
+  </div>
+  <div class="post-content">
+<h2 id="在服务器上部署docker配置深度学习环境">在服务器上部署docker配置深度学习环境<a hidden class="anchor" aria-hidden="true" href="#在服务器上部署docker配置深度学习环境">#</a></h2>
+<h3 id="step-0-install-nvidia-driver-on-server">Step 0 Install Nvidia Driver on Server<a hidden class="anchor" aria-hidden="true" href="#step-0-install-nvidia-driver-on-server">#</a></h3>
+<ul>
+<li>首先需要确保在服务器上安装了 Nvidia 的显卡驱动，<code>nvidia-smi</code> 命令要能用；</li>
+<li>查看服务器显卡型号：<code>lspci | grep -i nvidia</code> ；</li>
+<li>Nvidia 驱动下载地址：<a href="https://www.nvidia.com/download/index.aspx">click</a> ；</li>
+</ul>
+<h3 id="step-1-setting-up-docker">Step 1 Setting up Docker<a hidden class="anchor" aria-hidden="true" href="#step-1-setting-up-docker">#</a></h3>
+<ul>
+<li>安装 docker： <code>sudo apt install docker.io</code> ；</li>
+<li>启动 docker： <code>sudo systemctl start docker</code> ；</li>
+</ul>
+<h3 id="step-2-setting-up-nvidia-container-toolkit">Step 2 Setting up NVIDIA Container Toolkit<a hidden class="anchor" aria-hidden="true" href="#step-2-setting-up-nvidia-container-toolkit">#</a></h3>
+<ul>
+<li>
+<p>在终端执行下列指令，直接复制回车:</p>
+</li>
+<li>
+<pre tabindex="0"><code>  distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
+        &amp;&amp; curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
+        &amp;&amp; curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \
+              sed &#39;s#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g&#39; | \
+              sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+</code></pre></li>
+<li>
+<p>安装 <strong>Nvidia Container Toolkit</strong>：<code>sudo apt install -y nvidia-container-toolkit</code> ；</p>
+</li>
+<li>
+<p>配置 Docker 守护进程识别 Nvidia Container Runtime ：<code>sudo nvidia-ctk runtime configure --runtime=docker</code> ；</p>
+</li>
+<li>
+<p>重启 Docker，完成安装：<code>sudo systemctl restart docker</code> ；</p>
+</li>
+<li>
+<p>最后可以测试一下能否使用 <strong>cuda</strong>：<code>sudo docker run --rm --runtime=nvidia --gpus all nvidia/cuda:11.6.2-base-ubuntu20.04 nvidia-smi</code> ；</p>
+<ul>
+<li>
+<p>成功的话会显示如下：</p>
+</li>
+<li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>  +-----------------------------------------------------------------------------+
+</span></span><span style="display:flex;"><span>  | NVIDIA-SMI 450.51.06    Driver Version: 450.51.06    CUDA Version: 11.0     |
+</span></span><span style="display:flex;"><span>  |-------------------------------+----------------------+----------------------+
+</span></span><span style="display:flex;"><span>  | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+</span></span><span style="display:flex;"><span>  | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+</span></span><span style="display:flex;"><span>  |                               |                      |               MIG M. |
+</span></span><span style="display:flex;"><span>  |===============================+======================+======================|
+</span></span><span style="display:flex;"><span>  |   0  Tesla T4            On   | 00000000:00:1E.0 Off |                    0 |
+</span></span><span style="display:flex;"><span>  | N/A   34C    P8     9W /  70W |      0MiB / 15109MiB |      0%      Default |
+</span></span><span style="display:flex;"><span>  |                               |                      |                  N/A |
+</span></span><span style="display:flex;"><span>  +-------------------------------+----------------------+----------------------+
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  +-----------------------------------------------------------------------------+
+</span></span><span style="display:flex;"><span>  | Processes:                                                                  |
+</span></span><span style="display:flex;"><span>  |  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+</span></span><span style="display:flex;"><span>  |        ID   ID                                                   Usage      |
+</span></span><span style="display:flex;"><span>  |=============================================================================|
+</span></span><span style="display:flex;"><span>  |  No running processes found                                                 |
+</span></span><span style="display:flex;"><span>  +-----------------------------------------------------------------------------+
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>更多细节可参考 Nvidia <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html">官方文档</a> ；</p>
+</li>
+</ul>
+<h3 id="step-3-pull-image">Step 3 Pull Image<a hidden class="anchor" aria-hidden="true" href="#step-3-pull-image">#</a></h3>
+<ul>
+<li>下载配有 pytorch、cuda、cudnn 的镜像：<code>docker pull hambaobao/dlb:pytorch2.0.0-cuda11.7-cudnn8-v1.0</code> ；</li>
+<li>可以自己下载 Pytorch 或者 Nvidia 提供的更原始的镜像使用：
+<ul>
+<li>Pytorch：<a href="https://hub.docker.com/r/pytorch/pytorch/tags">click</a> ；</li>
+<li>Nvidia：<a href="https://hub.docker.com/r/nvidia/cuda">click</a> ；</li>
+</ul>
+</li>
+</ul>
+<h3 id="step-4-create-a-container">Step 4 Create a container<a hidden class="anchor" aria-hidden="true" href="#step-4-create-a-container">#</a></h3>
+<ul>
+<li><strong>example</strong>：<code>docker run -itd --name s87d --hostname s87d --gpus all -v /data0:/data0 -v /data1:/data1 -v /data2:/data2 -v /home/:/home/ -p 2094:2094 -p 4382:4382 hambaobao/dlb:pytorch2.0.0-cuda11.7-cudnn8-v1.0</code> ；
+<ul>
+<li><code>--name</code>：容器的名字；</li>
+<li><code>--hostname</code>：容器内的主机名；</li>
+<li><code>--gpus</code>：<strong>！！！非常关键！！！，没有这个选项容器内无法访问 GPUs</strong> ；</li>
+<li><code>-v</code>：挂载目录，建议挂载所有 <code>data</code> 目录和 <code>home</code> 目录；</li>
+<li><code>-p</code>：端口映射，用于 <code>ssh</code> 和 <code>proxy control</code>；</li>
+<li>一个最后是使用的镜像；</li>
+</ul>
+</li>
+</ul>
+
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://hambaobao.github.io/tags/docker/">docker</a></li>
+      <li><a href="https://hambaobao.github.io/tags/linux/">linux</a></li>
+    </ul>
+    <nav class="paginav">
+      <a class="next" href="https://hambaobao.github.io/post/n%E7%BB%B4%E7%A9%BA%E9%97%B4%E4%B8%AD%E7%82%B9%E5%88%B0%E8%B6%85%E5%B9%B3%E9%9D%A2%E7%9A%84%E8%B7%9D%E7%A6%BB/">
+        <span class="title">Next Page »</span>
+        <br>
+        <span>N维空间中点到超平面的距离</span>
+      </a>
+    </nav>
+  </footer>
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://hambaobao.github.io/assets/js/md5.min.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: 'd6570c774ba639af2e9d',
+    clientSecret: 'd904e1545e102a2605d2a9c84180661cd1c6ae0b',
+    repo: 'hambaobao.github.io',
+    owner: 'Hambaobao',
+    admin: ['Hambaobao'],
+    id: md5(location.pathname), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+      return;
+    }
+    gitalk.render('gitalk-container');
+  })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+
+</article>
+    </main><footer class="footer">
+    <span>&copy; 2023 <a href="https://hambaobao.github.io">Hambaobao</a></span>
+    <span>&middot;</span>
+    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
+    <span>&middot;</span>
+    <span>Theme <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+
+
+<script defer src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<script>
+    window.onload = function () {
+        if (localStorage.getItem("menu-scroll-position")) {
+            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+        }
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+    function menu_on_scroll() {
+        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+</body>
+
+</html>

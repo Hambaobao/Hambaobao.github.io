@@ -22,7 +22,9 @@
       <pubDate>Wed, 10 Feb 2021 17:07:26 +0800</pubDate>
       
       <guid>https://hambaobao.github.io/post/post-test-2/</guid>
-      <description>标题 一级标题 二级标题 三级标题 四级标题 五级标题 六级标题 列表 无序列表  1 2 3  锚点地址 空心原点  实心1 实心2 实心3  空心1 空心2 空心3    * 实心1 * 实心2 * 实心3 * 空心1 * 空心2 * 空心3 实心方块  实心1 实心2 实心3  空心1 空心2 空心3  实心方块1 实心方块2 实心方块3      * 实心1 * 实心2 * 实心3 * 空心1 * 空心2 * 空心3 * 实心方块1 * 实心方块2 * 实心方块3 有序列表  1 2 3  引用  这里是引用</description>
+      <description>标题 一级标题 二级标题 三级标题 四级标题 五级标题 六级标题 列表 无序列表 1 2 3 锚点地址 空心原点 实心1 实心2 实心3 空心1 空心2 空心3 * 实心1 * 实心2 * 实心3 * 空心1 * 空心2 * 空心3 实心方块 实心1 实心2 实心3 空心1 空心2 空心3 实心方块1 实心方块2 实心方块3 * 实心1 * 实心2 * 实心3 * 空心1 * 空心2 * 空心3 * 实心方块1 * 实心方块2 * 实心方块3 有序列表 1 2 3 引用 这里是引用
+锚点 锚点文本
+[锚点文本](#锚点地址) ... # 锚点地址 图片 !</description>
     </item>
     
     <item>
@@ -33,10 +35,10 @@
       <guid>https://hambaobao.github.io/post/post-test-1/</guid>
       <description>Heading 1 Paragraphs are separated by a blank line.
 2nd paragraph. Italic, bold, monospace. Itemized lists look like:
- this one that one the other one  Note that &amp;mdash; not considering the asterisk &amp;mdash; the actual text content starts at 3-columns in.
- Block quotes are written like so.
+this one that one the other one Note that &amp;mdash; not considering the asterisk &amp;mdash; the actual text content starts at 3-columns in.
+Block quotes are written like so.
 They can span multiple paragraphs, if you like.
- With smartyPants set to true in the markdown module configuration, you can format your content smartly:</description>
+With smartyPants set to true in the markdown module configuration, you can format your content smartly:</description>
     </item>
     
   </channel>

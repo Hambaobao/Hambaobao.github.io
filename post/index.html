@@ -10,18 +10,19 @@
 <meta name="keywords" content="" />
 <meta name="description" content="">
 <meta name="author" content="Hambaobao">
-<link rel="canonical" href="https://hambaobao.github.io/post/" />
-<link href="/assets/css/stylesheet.min.3b4ed2e80185ab356f837eda72c1debdea24ca2d707d78b82f2534624843aaa0.css" integrity="sha256-O07S6AGFqzVvg37acsHeveokyi1wfXi4LyU0YkhDqqA=" rel="preload stylesheet"
+<link rel="canonical"
+    href="https://hambaobao.github.io/post/" />
+<link href="/assets/css/stylesheet.min.608aafc4a643533f4ec6967b44e1560dd8623d1e10e96bc196999b8194900739.css" integrity="sha256-YIqvxKZDUz9OxpZ7ROFWDdhiPR4Q6WvBlpmbgZSQBzk=" rel="preload stylesheet"
     as="style">
 
-<link rel="icon" href="https://hambaobao.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://hambaobao.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://hambaobao.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://hambaobao.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://hambaobao.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="https://hambaobao.github.io/%20favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hambaobao.github.io/%20favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hambaobao.github.io/%20favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hambaobao.github.io/%20apple-touch-icon.png">
+<link rel="mask-icon" href="https://hambaobao.github.io/%20safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.111.3">
 <link rel="alternate" type="application/rss&#43;xml" href="https://hambaobao.github.io/post/index.xml">
 
 
@@ -29,11 +30,10 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hambaobao.github.io/post/" />
-<meta property="og:updated_time" content="2021-10-02T16:31:17+08:00" />
+<meta property="og:updated_time" content="2023-05-10T10:02:48+08:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
 <meta name="twitter:description" content=""/>
-
 
 
 </head>
@@ -132,17 +132,33 @@
 
   <header class="entry-header">
     <h2>
+      在服务器上部署docker配置深度学习环境
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>在服务器上部署docker配置深度学习环境 Step 0 Install Nvidia Driver on Server 首先需要确保在服务器上安装了 Nvidia 的显卡驱动，nvidia-smi 命令要能用； 查看服务器显卡型号：lspci | grep -i nvidia ； Nvidia 驱动下载地址：click ； Step 1 Setting up Docker 安装 docker： sudo apt install docker.io ； 启动 docker： sudo systemctl start docker ； Step 2 Setting up NVIDIA Container Toolkit 在终端执行下列指令，直接复制回车:
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \ &amp;&amp; curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \ &amp;&amp; curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \ sed &#39;s#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring....</p>
+  </section>
+  <footer class="entry-footer">
+
+May 10, 2023&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Hambaobao
+</footer>
+  <a class="entry-link" aria-label="post link to 在服务器上部署docker配置深度学习环境" href="https://hambaobao.github.io/post/%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2docker%E9%85%8D%E7%BD%AE%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83/"></a>
+</article>
+<article class="post-entry"> 
+
+  <header class="entry-header">
+    <h2>
       N维空间中点到超平面的距离
     </h2>
   </header>
   <section class="entry-content">
     <p>结论 N维空间中点到超平面的距离为：
-\[ d = \frac{\lvert \vec{w}^T \vec{x}&#43;b\rvert}{\lvert\lvert w \rvert\rvert} \]
-证明 前置证明 证明： \(w\) 是 \(\vec{w}^T \vec{x} &#43; b = 0\) 这个平面的法向量。
-
-设 \(\vec{w}^T \vec{x} &#43; b = 0\) 张成的平面为 \(S\)， \(A\)、\(B\) 为平面 \(S\) 上的任意两点，则 \(\vec{OA}\) 和 \(\vec{OB}\) 为从原点指向 \(A\)、\(B\) 两点的向量，因此 \(\vec{OA} - \vec{OB} = \vec{BA}\) 为平面 \(S\) 中的一个向量。由于 \(A\) 和 \(B\) 的任意性，\(\vec{BA}\) 可以表示平面 \(S\) 中的任意一个向量。
-设 \(A\) 和 \(B\) 对应的点分别为 \(\vec{x}_1\) 和 \(\vec{x}_2\) ，有
-\[ \begin{aligned} \vec{w}^T \vec{x}_1 &#43; b &amp;= 0 \\ \vec{w}^T \vec{x}_2 &#43; b &amp;= 0 \\ \end{aligned} \]...</p>
+$$ d = \frac{\lvert \vec{w}^T \vec{x}&#43;b\rvert}{\lvert\lvert w \rvert\rvert} $$
+证明 前置证明 证明： $$w$$ 是 $$\vec{w}^T \vec{x} &#43; b = 0$$ 这个平面的法向量。
+设 $$\vec{w}^T \vec{x} &#43; b = 0$$ 张成的平面为 $$S$$， $$A$$、$$B$$ 为平面 $$S$$ 上的任意两点，则 $$\vec{OA}$$ 和 $$\vec{OB}$$ 为从原点指向 $$A$$、$$B$$ 两点的向量，因此 $$\vec{OA} - \vec{OB} = \vec{BA}$$ 为平面 $$S$$ 中的一个向量。由于 $$A$$ 和 $$B$$ 的任意性，$$\vec{BA}$$ 可以表示平面 $$S$$ 中的任意一个向量。
+设 $$A$$ 和 $$B$$ 对应的点分别为 $$\vec{x}_1$$ 和 $$\vec{x}_2$$ ，有
+$$ \begin{aligned} \vec{w}^T \vec{x}_1 &#43; b &amp;= 0 \ \vec{w}^T \vec{x}_2 &#43; b &amp;= 0 \ \end{aligned} $$...</p>
   </section>
   <footer class="entry-footer">
 
@@ -159,18 +175,16 @@ October 2, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Hambaobao
   </header>
   <section class="entry-content">
     <p>矩 概率统计中用于描述样本的分布情况的数学量。
- 
-原点矩 令 \(k\) 为正整数， \(a\) 为任意实数， \(X\) 为随机变量，则
-\[ \upsilon_k = E((X-a)^k) \]
-称为随机变量对 \(a\) 的 \(k\) 阶矩。
-当 \(a = 0\) 时，
-\[ \upsilon_k = E(X^k) \]
-即为随机变量 \(X\) 的 \(k\) 阶原点矩。
-随机变量 \(X\) 的 一阶原点矩 即为其期望 \(E(X)\) ，也称为样本的中心。
- 
-中心矩 对于一维随机变量 \(X\)，其 \(k\) 阶中心矩 \(\mu_k\) 为相对于 \(E(X)\) 的 \(k\) 阶矩：
-\[ \mu_k = E((X-E(X)^k)) = \int_{-\infty}^{&#43;\infty} (x - \mu)^k f(x) dx \]
-意义  0 阶中心矩 \[\mu_0\] 恒为 \[1\] ； 1 阶中心距 \[\mu_1\] 恒为 \[0\] ； 2 阶中心距 \[\mu_2 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^2dx = E(X^2) - E(X)^2\] ，为 \[X\] 的方差 \[Var(X)\] ； 3 阶中心距 \[\mu_3 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^3 dx\] 为 \[X\] 的偏态； 4 阶中心距 \[\mu_4 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^4 dx\] 为 \[X\] 的峰态；  性质  中心矩具有平移不变性，对任意随机变量 \[X\] 和任意常数 \[c\] ，恒有：\[\mu_n(X&#43;c) = \mu_n(X)\] ； \[n\] 阶中心矩是 \[n\] 的齐次函数：\[\mu_n(cX) = c^n\mu_n(X)\] ；   ...</p>
+原点矩 令 $$k$$ 为正整数， $$a$$ 为任意实数， $$X$$ 为随机变量，则
+$$ \upsilon_k = E((X-a)^k) $$
+称为随机变量对 $$a$$ 的 $$k$$ 阶矩。
+当 $$a = 0$$ 时，
+$$ \upsilon_k = E(X^k) $$
+即为随机变量 $$X$$ 的 $$k$$ 阶原点矩。
+随机变量 $$X$$ 的 一阶原点矩 即为其期望 $$E(X)$$ ，也称为样本的中心。
+中心矩 对于一维随机变量 $$X$$，其 $$k$$ 阶中心矩 $$\mu_k$$ 为相对于 $$E(X)$$ 的 $$k$$ 阶矩：
+$$ \mu_k = E((X-E(X)^k)) = \int_{-\infty}^{&#43;\infty} (x - \mu)^k f(x) dx $$
+意义 0 阶中心矩 $$\mu_0$$ 恒为 $$1$$ ； 1 阶中心距 $$\mu_1$$ 恒为 $$0$$ ； 2 阶中心距 $$\mu_2 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^2dx = E(X^2) - E(X)^2$$ ，为 $$X$$ 的方差 $$Var(X)$$ ； 3 阶中心距 $$\mu_3 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^3 dx$$ 为 $$X$$ 的偏态； 4 阶中心距 $$\mu_4 = \int_{-\infty}^{&#43;\infty}[x - E(x)]^4 dx$$ 为 $$X$$ 的峰态； 性质 中心矩具有平移不变性，对任意随机变量 $$X$$ 和任意常数 $$c$$ ，恒有：$$\mu_n(X&#43;c) = \mu_n(X)$$ ； $$n$$ 阶中心矩是 $$n$$ 的齐次函数：$$\mu_n(cX) = c^n\mu_n(X)$$ ； 样本距 样本的 $$k$$ 阶原点矩： $$\alpha_k = \frac{1}{n} \sum_{i=1}^{n}X_i^k$$ ； 样本的 $$k$$ 阶中心矩： $$\beta_k = \frac{1}{n} \sum_{i=1}^{n} [X_i - E(X)]^k$$ ； ...</p>
   </section>
   <footer class="entry-footer">
 
@@ -186,16 +200,15 @@ April 21, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Hambaobao
     </h2>
   </header>
   <section class="entry-content">
-    <p>使用 Pdb 调试 Python 程序 启动方法（ 2 种）  侵入式方法（需要在被调试的代码中添加一行代码然后再正常运行代码）
+    <p>使用 Pdb 调试 Python 程序 启动方法（ 2 种） 侵入式方法（需要在被调试的代码中添加一行代码然后再正常运行代码）
 import pdb;pdb.set_trace()
- 非侵入式方法（类似于 gdb ，不用额外修改源代码，在命令行下直接运行就能调试）
+非侵入式方法（类似于 gdb ，不用额外修改源代码，在命令行下直接运行就能调试）
 python3 -m pdb filename.py
-   
-Pdb 命令 查看源代码  命令 l ：查看当前位置前后11行源代码（多次会翻页），当前位置在代码中会用--&gt;这个符号标出来； 命令 ll ：查看当前函数或框架的所有源代码；   
-添加断点  命令 b line_number ：例如 b 18 在当前文件的第 \(18\) 行打断点； 命令 b filename:line_number ：在 filename 文件的第 line_number 行打断点； 命令 b functionname ：在函数 functionname 处打断点；
- 命令 b ：列出所有中断，包括每个断点、命中该断点的次数、当前的忽略次数以及关联的条件；
-   
-清除断点  命令 cl ：清除所有断点； 命令 cl bpnumber [bpnumber ....</p>
+Pdb 命令 查看源代码 命令 l ：查看当前位置前后11行源代码（多次会翻页），当前位置在代码中会用–&gt;这个符号标出来； 命令 ll ：查看当前函数或框架的所有源代码； 添加断点 命令 b line_number ：例如 b 18 在当前文件的第 $$18$$ 行打断点；
+命令 b filename:line_number ：在 filename 文件的第 line_number 行打断点；
+命令 b functionname ：在函数 functionname 处打断点；
+命令 b ：列出所有中断，包括每个断点、命中该断点的次数、当前的忽略次数以及关联的条件；
+清除断点 命令 cl ：清除所有断点； 命令 cl bpnumber [bpnumber ...] ：清除指定行的断点，如有多个，则用空格隔开； 命令 cl filename:lineno ：清除指定文件的某一行的断点； 打印变量值 命令 p expression ：expression 为 Python 表达式； 逐行调试命令 命令 s ：执行下一行（能够进入函数体）； 命令 n ：执行下一行（不会进入函数体）； 命令 r ：执行下一行（在函数中时会直接执行到函数返回处）； 非逐行调试命令 命令 c ：持续执行下去，直到遇到一个断点； 命令 unt lineno ：持续执行直到运行到指定行（或遇到断点）； 命令 j lineno ：直接跳转到指定行（被跳过的代码不执行）； 查看函数参数 命令 a ：在函数中时打印函数的参数和参数的值； 打印变量类型 命令 whatis expression ：打印表达式的类型，常用来打印变量值； 启动交互式解释器 命令 interact ：启动一个 python 的交互式解释器，使用当前代码的全局命名空间（使用 ctrl&#43;d 返回 pdb ）； 打印堆栈信息 命令 w ：打印堆栈信息，最新的帧在最底部。箭头表示当前帧； 退出pdb 命令 q ：退出 pdb 程序； 参考资料 10分钟教程掌握Python调试器pdb ； Python官方文档 ...</p>
   </section>
   <footer class="entry-footer">
 
@@ -211,11 +224,8 @@ March 27, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Hambaobao
     </h2>
   </header>
   <section class="entry-content">
-    <p>环境描述  Blog 框架：Hugo； Blog 主题：PaperMod； 本文发布时间：2021-03-26   
-问题描述 由于 Github 限制 label 长度不能超过 \(50\) ，所以当 Blog 名称长度超过 \(50\) 后，Gitalk 就不能成功初始化 issue ，开启评论时提示错误信息为：Error:Validation Failed 。
- 
+    <p>环境描述 Blog 框架：Hugo； Blog 主题：PaperMod； 本文发布时间：2021-03-26 问题描述 由于 Github 限制 label 长度不能超过 $$50$$ ，所以当 Blog 名称长度超过 $$50$$ 后，Gitalk 就不能成功初始化 issue ，开启评论时提示错误信息为：Error:Validation Failed 。
 解决方法 1. 找到一个 JS 实现的 md5 脚本 比如这个： JavaScript- MD5，我使用的是该仓库下的 js/md5.min.js 这个文件，把它下载下来，然后放到自己的网站的 js 脚本目录下，比如我的是 https://hambaobao.github.io/assets/js/ ，此处为生成静态网站文件后上传到 Github 的目录位置，至于在本地的时候放在哪里，由于不同框架和主题不同请读者自行判断，我是放到了本地的 /public/assets/js/ 下。
- 
 2. 修改 Gitalk 配置文件 简单的引入md5 脚本，并修改 Gitalk 配置中的 id 即可。
 原文件：
 {{ if .Site.Params.enableGitalk }} &lt;div id=&#34;gitalk-container&#34;&gt;&lt;/div&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css&#34;&gt; &lt;script src=&#34;https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js&#34;&gt;&lt;/script&gt; &lt;script&gt; const gitalk = new Gitalk({ clientID: &#39;{{ ....</p>
@@ -234,10 +244,9 @@ March 26, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Hambaobao
     </h2>
   </header>
   <section class="entry-content">
-    <p>Blog 注意事项   行内的数学公式需要使用两个 $$ 符号包裹，行间的数学公式需要使用两个 $$ 符号包裹，且美元符号之前和之后需要空一行，可以使用 Typora 编写后再使用 vscode 将所有单个 $ 符号替换为$$ 两个美元符号，然后再网站根目录下执行 ./deploy.sh 发布更新网站内容；Reference
-  Typora 中的空白行不会在网页中出现，若希望在网页出现像使用 Typora 打开 .md 文件那样的空白行，需要在 Typora 中的空白行使用 &amp;nbsp; 占位；Reference
-  Updating；
-  ...</p>
+    <p>Blog 注意事项 行内的数学公式需要使用两个 $$ 符号包裹，行间的数学公式需要使用两个 $$ 符号包裹，且美元符号之前和之后需要空一行，可以使用 Typora 编写后再使用 vscode 将所有单个 $ 符号替换为$$ 两个美元符号，然后再网站根目录下执行 ./deploy.sh 发布更新网站内容；Reference
+Typora 中的空白行不会在网页中出现，若希望在网页出现像使用 Typora 打开 .md 文件那样的空白行，需要在 Typora 中的空白行使用 &amp;nbsp; 占位；Reference
+Updating；...</p>
   </section>
   <footer class="entry-footer">
 
@@ -253,7 +262,7 @@ March 25, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Hambaobao
     </h2>
   </header>
   <section class="entry-content">
-    <p>希腊字母    公式 语法     \(\alpha\) \alpha   \(\theta\) \theta   \(o\) o   \(\tau\) \tau   \(\beta\) \beta   \(\pi\) \pi   \(\upsilon\) \upsilon   \(\gamma\) \gamma   \(\iota\) \iota   \(\omega\) \omega   \(\phi\) \phi   \(\varphi\) \varphi   \(\epsilon\) \epsilon   \(\lambda\) \lambda   \(\chi\) \chi   \(\varepsilon\) \varepsilon   \(\mu\) \mu   \(\sigma\) \sigma   \(\psi\) \psi   \(\zeta\) \zeta   \(\nu\) \nu   \(\eta\) \eta   \(\xi\) xi   \(\Gamma\) \Gamma   \(\Lambda\) \Lambda   \(\Sigma\) \Sigma   \(\Psi\) \Psi   \(\Delta\) \Delta   \(\Upsilon\) \Upsilon   \(\Omega\) \Omega   \(\Theta\) \Theta   \(\Pi\) \Pi   \(\Phi\) \Phi     ...</p>
+    <p>希腊字母 公式 语法 $$\alpha$$ \alpha $$\theta$$ \theta $$o$$ o $$\tau$$ \tau $$\beta$$ \beta $$\pi$$ \pi $$\upsilon$$ \upsilon $$\gamma$$ \gamma $$\iota$$ \iota $$\omega$$ \omega $$\phi$$ \phi $$\varphi$$ \varphi $$\epsilon$$ \epsilon $$\lambda$$ \lambda $$\chi$$ \chi $$\varepsilon$$ \varepsilon $$\mu$$ \mu $$\sigma$$ \sigma $$\psi$$ \psi $$\zeta$$ \zeta $$\nu$$ \nu $$\eta$$ \eta $$\xi$$ xi $$\Gamma$$ \Gamma $$\Lambda$$ \Lambda $$\Sigma$$ \Sigma $$\Psi$$ \Psi $$\Delta$$ \Delta $$\Upsilon$$ \Upsilon $$\Omega$$ \Omega $$\Theta$$ \Theta $$\Pi$$ \Pi $$\Phi$$ \Phi 运算符 公式 语法 $$\sum$$ \sum $$\prod$$ \prod $$\lim$$ \lim $$\infty$$ \infty $$&#43;\infty$$ &#43;\infty $$-\infty$$ \infty $$\lim_{i \to \infty}$$ \lim_{i \to \infty} $$\int$$ \int $$\iint$$ \iint $$\iiint$$ \iiint $$&#43;$$ &#43; $$-$$ - $$*$$ * $$/$$ / $$\pm$$ \pm $$\times$$ \times $$\div$$ \div $$\cdot$$ \cdot $$=$$ = $$\leq$$ \leq $$\geq$$ \geq $$\neq$$ \neq $$\approx$$ \approx $$\equiv$$ \equiv $$\lt$$ \lt $$\gt$$ \gt $$\binom{n}{k}$$ \binom{n}{k} $$\mathrm{C}_n^k$$ \mathrm{C}_n^k $$\mathrm{A}_n^k$$ \mathrm{A}_n^k} $$\sqrt{}$$ \sqrt{} $$\sqrt{2}$$ \sqrt{2} $$\sqrt[3]{2}$$ \sqrt[3]{2} $$\frac{1}{2}$$ \frac{1}{2} $$\dfrac{1}{2}$$ \dfrac{1}{2} $$\tfrac{1}{2}$$ \tfrac{1}{2} 集合 公式 语法 $$\mathbb{R}$$ \mathbb{R} $$\mathbb{Q}$$ \mathbb{Q} $$\mathbb{Z}$$ \mathbb{Z} $$\mathbb{N}$$ \mathbb{N} $$\mathbb{I}$$ \mathbb{I} $$\mathbb{C}$$ \mathbb{C} $$\mathbb{P}$$ \mathbb{P} $$\mathbb{W}$$ \mathbb{W} $$\empty$$ \empty 集合关系 公式 语法 $$\cap$$ \cap $$\cup$$ \cup $$\in$$ \in $$\notin$$ \notin $$\subset$$ \subset $$\subseteq$$ \subseteq $$\subsetneq$$ \subsetneq $$\supset$$ \supset $$\supseteq$$ supseteq $$\supsetneq$$ \subsetneq $$\not\subset$$ \not\subset $$\not\subseteq$$ \not\subseteq $$\mid$$ \mid $$\overline{A}$$ \overline{A} $$A \setminus B$$ A \setminus B 箭头符号 公式 语法 $$\rightarrow$$ \rightarrow $$\leftarrow$$ \leftarrow $$\leftrightarrow$$ \leftrightarrow $$\Rightarrow$$ \Rightarrow $$\Leftarrow$$ \Leftarrow $$\Leftrightarrow$$ \Leftrightarrow $$\uparrow$$ \uparrow $$\downarrow$$ \downarrow $$\Uparrow$$ \Uparrow $$\Downarrow$$ \Downarrow $$\longrightarrow$$ \longrightarrow $$\longleftarrow$$ \longleftarrow $$\Longrightarrow$$ \Longrightarrow $$\Longleftarrow$$ \Longleftarrow $$\Longleftrightarrow$$ \Longleftrightarrow $$\nearrow$$ \nearrow $$\searrow$$ \searrow $$\nwarrow$$ \nwarrow $$\swarrow$$ \swarrow 其它 公式 语法 $$a \dots b$$ a \dots b $$a \cdots b$$ a \cdots b $$\boxed{A = B}$$ \boxed{A = B} $$ab$$ ab $$a , b$$ a \, b $$a ; b$$ a \; b $$a \ b$$ a \ b $$a !...</p>
   </section>
   <footer class="entry-footer">
 
@@ -269,14 +278,13 @@ March 25, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Hambaobao
     </h2>
   </header>
   <section class="entry-content">
-    <p>公式记号 \[ P(A \cap B) = P(AB) \]
- 
-事件独立性 独立 (Independent) 和两两相互独立 (Pairwise independent) 记有事件 \(A_1、A_2、...、A_m\) ，若事件 \(A_1、A_2、...、A_m\) 独立：
-\[ P(A_1 \cap A_2 \cap ... \cap A_m) = P(A_1)P(A_2)...P(A_m) \]
-若事件 \(A_1、A_2、...、A_m\) 两两相互独立：
-\[ P(A_i \cap A_j) = P(A_i)P(A_j), for\ any \ 1 \le i, j \le m \]
-注意 事件 \(A_1、A_2、...、A_m\) 独立比事件 \(A_1、A_2、...、A_m\) 两两相互独立的条件更强，即使事件 \(A_1、A_2、...、A_m\) 两两相互独立，事件 \(A_1、A_2、...、A_m\) 也不一定独立，即公式 \((3)\) 成立，公式 \((2)\) 也不一定成立。
-例子 抛两次骰子，记第一次抛出正面为事件 \(A\) ，记第二次抛出正面为事件 \(B\) ，记两次抛出得到相同的面为事件 \(C\) ，事件 \(A、B、C\) 两两相互独立，但是事件 \(A、B、C\) 并不独立：...</p>
+    <p>公式记号 $$ P(A \cap B) = P(AB) $$
+事件独立性 独立 (Independent) 和两两相互独立 (Pairwise independent) 记有事件 $$A_1、A_2、…、A_m$$ ，若事件 $$A_1、A_2、…、A_m$$ 独立：
+$$ P(A_1 \cap A_2 \cap … \cap A_m) = P(A_1)P(A_2)…P(A_m) $$
+若事件 $$A_1、A_2、…、A_m$$ 两两相互独立：
+$$ P(A_i \cap A_j) = P(A_i)P(A_j), for\ any \ 1 \le i, j \le m $$
+注意 事件 $$A_1、A_2、…、A_m$$ 独立比事件 $$A_1、A_2、…、A_m$$ 两两相互独立的条件更强，即使事件 $$A_1、A_2、…、A_m$$ 两两相互独立，事件 $$A_1、A_2、…、A_m$$ 也不一定独立，即公式 $$(3)$$ 成立，公式 $$(2)$$ 也不一定成立。
+例子 抛两次骰子，记第一次抛出正面为事件 $$A$$ ，记第二次抛出正面为事件 $$B$$ ，记两次抛出得到相同的面为事件 $$C$$ ，事件 $$A、B、C$$ 两两相互独立，但是事件 $$A、B、C$$ 并不独立：...</p>
   </section>
   <footer class="entry-footer">
 
@@ -292,13 +300,11 @@ March 25, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Hambaobao
     </h2>
   </header>
   <section class="entry-content">
-    <p>独立事件 (Independent events)  定义 事件 \(A\) 和事件 \(B\) 互斥的定义是：\(P(A \cap B) = P(A)P(B)\) ，即事件 \(A\) 的发生不会对事件 \(B\) 的发生产生任何影响，事件 \(B\) 的发生不会对事件 \(A\) 的发生产生任何影响。
-例子 抛两次硬币，记第一次抛到正面朝上为事件 \(A\) ，第二次抛到正面朝上为事件 \(B\) ，则事件 \(A\) 和事件 \(B\) 相互独立，因为第一抛硬币的结果并不会影响第二次抛硬币的结果。
- 
-互斥事件 (Mutually exclusive events)  定义 事件 \(A\) 和事件 \(B\) 互斥的定义是：\(A \cap B = \emptyset\) ，即事件 \(A\) 和事件 \(B\) 不可能同时发生。
-例子 设一个大学生是大一学生、大二学生、大三学生、大四学生分别为事件 \(A、B、C、D\) ，则事件 \(A\) 和事件 \(B\) 是互斥事件，因为一个同学不可能既是大一学生又是大二学生。
- 
-对立事件 (Opposing events)  定义 事件 \(A\) 和事件 \(B\) 对立的定义是：\(A \cap B = \emptyset\) 并且 \(A \cup B = U\) 。...</p>
+    <p>独立事件 (Independent events) 定义 事件 $$A$$ 和事件 $$B$$ 互斥的定义是：$$P(A \cap B) = P(A)P(B)$$ ，即事件 $$A$$ 的发生不会对事件 $$B$$ 的发生产生任何影响，事件 $$B$$ 的发生不会对事件 $$A$$ 的发生产生任何影响。
+例子 抛两次硬币，记第一次抛到正面朝上为事件 $$A$$ ，第二次抛到正面朝上为事件 $$B$$ ，则事件 $$A$$ 和事件 $$B$$ 相互独立，因为第一抛硬币的结果并不会影响第二次抛硬币的结果。
+互斥事件 (Mutually exclusive events) 定义 事件 $$A$$ 和事件 $$B$$ 互斥的定义是：$$A \cap B = \emptyset$$ ，即事件 $$A$$ 和事件 $$B$$ 不可能同时发生。
+例子 设一个大学生是大一学生、大二学生、大三学生、大四学生分别为事件 $$A、B、C、D$$ ，则事件 $$A$$ 和事件 $$B$$ 是互斥事件，因为一个同学不可能既是大一学生又是大二学生。
+对立事件 (Opposing events) 定义 事件 $$A$$ 和事件 $$B$$ 对立的定义是：$$A \cap B = \emptyset$$ 并且 $$A \cup B = U$$ 。...</p>
   </section>
   <footer class="entry-footer">
 
@@ -314,32 +320,13 @@ March 24, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Hambaobao
     </h2>
   </header>
   <section class="entry-content">
-    <p>Contrastive Representation 标题 一级标题 二级标题 三级标题 四级标题 五级标题 六级标题 列表 无序列表  1 2 3    ...</p>
+    <p>Contrastive Representation 标题 一级标题 二级标题 三级标题 四级标题 五级标题 六级标题 列表 无序列表 1 2 3 ...</p>
   </section>
   <footer class="entry-footer">
 
 March 22, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Hambaobao
 </footer>
   <a class="entry-link" aria-label="post link to Contrastive Representation" href="https://hambaobao.github.io/post/contrastive-representation/"></a>
-</article>
-<article class="post-entry"> 
-
-  <header class="entry-header">
-    <h2>
-      About Me
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Profile  ​	I am Hambaobao, here is some information about me.
-Work  ​	[1] Reserved …
-​	[2] Reserved …
-Contact   Email: jameszhang2880@gmail.com  ...</p>
-  </section>
-  <footer class="entry-footer">
-
-February 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Hambaobao
-</footer>
-  <a class="entry-link" aria-label="post link to About Me" href="https://hambaobao.github.io/post/about-me/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
@@ -348,7 +335,7 @@ February 12, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Hambaobao
 </footer>
 
     </main><footer class="footer">
-    <span>&copy; 2021 <a href="https://hambaobao.github.io">Hambaobao</a></span>
+    <span>&copy; 2023 <a href="https://hambaobao.github.io">Hambaobao</a></span>
     <span>&middot;</span>
     <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
     <span>&middot;</span>
