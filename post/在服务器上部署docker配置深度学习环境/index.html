@@ -197,11 +197,13 @@ May 10, 2023&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Hambaobao
 <li>查看服务器显卡型号：<code>lspci | grep -i nvidia</code> ；</li>
 <li>Nvidia 驱动下载地址：<a href="https://www.nvidia.com/download/index.aspx">click</a> ；</li>
 </ul>
+<p> </p>
 <h3 id="step-1-setting-up-docker">Step 1 Setting up Docker<a hidden class="anchor" aria-hidden="true" href="#step-1-setting-up-docker">#</a></h3>
 <ul>
 <li>安装 docker： <code>sudo apt install docker.io</code> ；</li>
 <li>启动 docker： <code>sudo systemctl start docker</code> ；</li>
 </ul>
+<p> </p>
 <h3 id="step-2-setting-up-nvidia-container-toolkit">Step 2 Setting up NVIDIA Container Toolkit<a hidden class="anchor" aria-hidden="true" href="#step-2-setting-up-nvidia-container-toolkit">#</a></h3>
 <ul>
 <li>
@@ -256,6 +258,7 @@ May 10, 2023&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Hambaobao
 <p>更多细节可参考 Nvidia <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html">官方文档</a> ；</p>
 </li>
 </ul>
+<p> </p>
 <h3 id="step-3-pull-image">Step 3 Pull Image<a hidden class="anchor" aria-hidden="true" href="#step-3-pull-image">#</a></h3>
 <ul>
 <li>下载配有 pytorch、cuda、cudnn 的镜像：<code>docker pull hambaobao/dlb:pytorch2.0.0-cuda11.7-cudnn8-v1.0</code> ；</li>
@@ -266,6 +269,7 @@ May 10, 2023&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Hambaobao
 </ul>
 </li>
 </ul>
+<p> </p>
 <h3 id="step-4-create-a-container">Step 4 Create a container<a hidden class="anchor" aria-hidden="true" href="#step-4-create-a-container">#</a></h3>
 <ul>
 <li><strong>example</strong>：<code>docker run -itd --name s87d --hostname s87d --gpus all -v /data0:/data0 -v /data1:/data1 -v /data2:/data2 -v /home/:/home/ -p 2094:2094 -p 4382:4382 hambaobao/dlb:pytorch2.0.0-cuda11.7-cudnn8-v1.0</code> ；
@@ -279,6 +283,7 @@ May 10, 2023&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Hambaobao
 </ul>
 </li>
 </ul>
+<p> </p>
 
 </div>
   <footer class="post-footer">
