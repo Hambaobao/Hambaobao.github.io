@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Hambaobao</title>
+    <link>https://hambaobao.github.io/categories/linux/</link>
+    <description>Recent content in linux on Hambaobao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 May 2023 12:02:48 +0800</lastBuildDate><atom:link href="https://hambaobao.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>服务器日常维护常用指令</title>
+      <link>https://hambaobao.github.io/post/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%A5%E5%B8%B8%E7%BB%B4%E6%8A%A4%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
+      <pubDate>Thu, 18 May 2023 12:02:48 +0800</pubDate>
+      
+      <guid>https://hambaobao.github.io/post/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%A5%E5%B8%B8%E7%BB%B4%E6%8A%A4%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
+      <description>服务器日常维护常用指令 用户管理 创建新用户：sudo adduser username ; 删除用户：sudo userdel -r username ; 将普通用户添加到 sudo 组：sudo usermod -aG sudo username ; 将普通用户添加到 normuser 组：sudo usermod -aG normuser username ; 修改用户 uid ：sudo usermod -u uid username ; 修改用户 gid ：sudo groupmod -g gid username ; 修改用户默认 shell 为 zsh ：sudo usermod -s /bin/zsh username ; 文件解压缩 .tar：
+解压：tar xvf FileName.tar ; 压缩：tar cvf FileName.tar DirName ; .gz：
+解压：gunzip FileName.gz 或 gzip -d FileName.</description>
+    </item>
+    
+  </channel>
+</rss>
