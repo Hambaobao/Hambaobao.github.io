@@ -1,0 +1,26 @@
+baseURL = "http://hambaobao.me/"
+languageCode = "en-us"
+title = "My Personal Homepage"
+theme = "PaperMod"
+
+[params]
+author = "Hambaobao"
+description = "This is my personal website."
+
+homeInfoParams = { Title = "👋 Hi, I'm Hambaobao", Content = "Welcome to my personal site." }
+
+ShowShareButtons = false
+ShowReadingTime = true
+ShowCodeCopyButtons = true
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 1
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 2

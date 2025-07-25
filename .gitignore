@@ -1,0 +1,15 @@
+.vscode/
+/public/
+/resources/
+hugo_cache/
+node_modules/
+
+.DS_Store
+Thumbs.db
+
+*.swp
+*.swo
+*.tmp
+
+.netlify/
+.vercel/
