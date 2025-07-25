@@ -1,13 +1,13 @@
 baseURL = "http://hambaobao.me/"
 languageCode = "en-us"
-title = "My Personal Homepage"
+title = "Homepage"
 theme = "PaperMod"
 
 [params]
-author = "Hambaobao"
+author = "Lei Zhang"
 description = "This is my personal website."
 
-homeInfoParams = { Title = "👋 Hi, I'm Hambaobao", Content = "Welcome to my personal site." }
+homeInfoParams = { Title = "👋 Hi, I'm Lei Zhang", Content = "Welcome to my personal site." }
 
 ShowShareButtons = false
 ShowReadingTime = true
