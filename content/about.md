@@ -17,6 +17,10 @@ I’m currently interning at **Alibaba Qwen Group** in Beijing, China, conductin
 - **B.Sc. in Computer Science**, University of Chinese Academy of Sciences, 2017-2021
 
 ## Publications
+- *Qwen3 Technical Report*, **[Technical Report]**
+
+    See Contributors
+
 - *SWE-Flow: Synthesizing Software Engineering Data in a Test-Driven Manner*, **[ICML'25, CCF-A]** 
 
     **Lei Zhang**, Jiaxi Yang, Min Yang, Jian Yang, Mouxiang Chen, Jiajun Zhang, Zeyu Cui, Binyuan Hui, Junyang Lin
@@ -44,6 +48,10 @@ I’m currently interning at **Alibaba Qwen Group** in Beijing, China, conductin
 - *Next Token Prediction Towards Multimodal Intelligence: A Comprehensive Survey*, **[Preprint]**
 
     Liang Chen, Zekun Wang, Shuhuai Ren, Lei Li, Haozhe Zhao, Yunshui Li, Zefan Cai, Hongcheng Guo, **Lei Zhang**, Yizhe Xiong, Yichi Zhang, Ruoyu Wu, Qingxiu Dong, Ge Zhang, Jian Yang, Lingwei Meng, Shujie Hu, Yulong Chen, Junyang Lin, Shuai Bai, Andreas Vlachos, Xu Tan, Minjia Zhang, Wen Xiao, Aaron Yee, Tianyu Liu, Baobao Chang
+
+- *Qwen2.5 Technical Report*, **[Technical Report]**
+
+    See Contributors
 
 - *Qwen2.5-Coder Technical Report*, **[Technical Report]**
 
