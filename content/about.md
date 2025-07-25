@@ -13,7 +13,7 @@ I’m currently interning at **Alibaba Qwen Group** in Beijing, China, conductin
 
 ## Academic Achievements
 
-- **Ph.D. in Computer Science**, University of Chinese Academy of Sciences, 2021-now
+- **Ph.D. in Computer Science**, University of Chinese Academy of Sciences, 2021-present
 - **B.Sc. in Computer Science**, University of Chinese Academy of Sciences, 2017-2021
 
 ## Publications
