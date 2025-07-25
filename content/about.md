@@ -8,8 +8,8 @@ Hi there, I'm Lei Zhang. 👋
 
 I'm a Ph.D. student at the **University of Chinese Academy of Sciences**, Beijing, China.
 My research interests include **Agentic Coding**, **Agentic Reinforcement Learning**, and **Natural Language Processing**.
-Currently, I'm an intern at **Alibaba Qwen Group**, Beijing, China.
-I'm currently focusing on the research of Large Language Models (LLMs) and their applications.
+
+I’m currently interning at **Alibaba Qwen Group** in Beijing, China, conducting research on Large Language Models (LLMs) and their applications.
 
 ## Academic Achievements
 

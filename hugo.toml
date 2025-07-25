@@ -12,6 +12,7 @@ homeInfoParams = { Title = "👋 Hi, I'm Lei Zhang", Content = "Welcome to my pe
 ShowShareButtons = false
 ShowReadingTime = true
 ShowCodeCopyButtons = true
+customCSS = ["css/override.css"]
 
 [[menu.main]]
 identifier = "about"

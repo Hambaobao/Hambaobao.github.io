@@ -1,0 +1,3 @@
+{{- /* Custom CSS for overriding main width */ -}}
+{{- $customCSS := resources.Get "css/override.css" -}}
+<link rel="stylesheet" href="{{$customCSS.RelPermalink}}">

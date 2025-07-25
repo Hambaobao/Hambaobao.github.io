@@ -37,6 +37,31 @@ The site is built with [Hugo](https://gohugo.io/) and automatically deployed to 
 - Theme: [PaperMod](https://github.com/adityatelange/hugo-PaperMod) (added as a submodule)
 - Custom domain: [`CNAME`](./CNAME)
 
+## Common Hugo Commands
+
+Here are some frequently used Hugo commands for daily writing and site management:
+
+- Create a new post:
+  ```sh
+  hugo new posts/your-post-title.md
+  ```
+  > Create a new post under the content/posts directory.
+
+- Create a new page (e.g., about):
+  ```sh
+  hugo new about.md
+  ```
+  > Create a new page under the content directory.
+
+- Publish a post (set draft to false):
+  Edit the Front Matter of the corresponding Markdown file and change `draft: true` to `draft: false`.
+
+- View all available commands:
+  ```sh
+  hugo --help
+  ```
+  > Show all supported Hugo commands and options.
+
 ## Deployment
 
 Deployment is handled automatically via GitHub Actions:
