@@ -13,7 +13,7 @@ I’m currently interning at **Alibaba Qwen Group** in Beijing, China, conductin
 
 ## Academic Achievements
 
-- **Ph.D. in Computer Science**, University of Chinese Academy of Sciences, 2021-present
+- **Ph.D. in Computer Application Technology**, University of Chinese Academy of Sciences, 2021-present
 - **B.Sc. in Computer Science**, University of Chinese Academy of Sciences, 2017-2021
 
 ## Publications
@@ -23,13 +23,13 @@ I’m currently interning at **Alibaba Qwen Group** in Beijing, China, conductin
 
 - Qwen3 Technical Report, **[Technical Report]**
 
-    *Contributors*
+    *Contributor* — Responsible for Agentic Coding (including infrastructure implementation and training data synthesis)
 
 - SWE-Flow: Synthesizing Software Engineering Data in a Test-Driven Manner, **[ICML'25, CCF-A]** 
 
     ***Lei Zhang***, *Jiaxi Yang*, *Min Yang*, *Jian Yang*, *Mouxiang Chen*, *Jiajun Zhang*, *Zeyu Cui*, *Binyuan Hui*, *Junyang Lin*
 
-- DEEM: Diffusion Models Serve as the Eyes of Large Language Models for Image Perception, **[ICLR'25]**
+- DEEM: Diffusion Models Serve as the Eyes of Large Language Models for Image Perception, **[ICLR'25, Spotlight]**
 
     *Run Luo*, *Yunshui Li*, *Longze Chen*, *Wanwei He*, *Ting-En Lin*, *Ziqiang Liu*, ***Lei Zhang***, *Zikai Song*, *Xiaobo Xia*, *Tongliang Liu*, *Min Yang*, *Binyuan Hui*
 
@@ -43,7 +43,7 @@ I’m currently interning at **Alibaba Qwen Group** in Beijing, China, conductin
 
 - Qwen2.5 Technical Report, **[Technical Report]**
 
-    *Contributors*
+    *Contributor* — Responsible for integrating and conducting code evaluation (EvalPlus, Multiple, LiveCodeBench, BigCodeBench) for iterative model development.
 
 - Qwen2.5-Coder Technical Report, **[Technical Report]**
 
