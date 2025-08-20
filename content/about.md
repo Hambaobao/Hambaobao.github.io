@@ -17,6 +17,10 @@ I’m currently interning at **Alibaba Qwen Group** in Beijing, China, conductin
 - **B.Sc. in Computer Science**, University of Chinese Academy of Sciences, 2017-2021
 
 ## Publications
+- CodeArena: Evaluating and Aligning CodeLLMs on Human Preference, **[EMNLP'25, CCF-B]**
+
+    *Jian Yang*, *Jiaxi Yang*, *Wei Zhang*, *Ke Jin*, *Yibo Miao*, ***Lei Zhang***, *Liqun Yang*, *Zeyu Cui*, *Yichang Zhang*, *Binyuan Hui*, *Junyang Lin*
+
 - Qwen3 Technical Report, **[Technical Report]**
 
     *Contributors*
@@ -36,18 +40,6 @@ I’m currently interning at **Alibaba Qwen Group** in Beijing, China, conductin
 - Fine-Tuning Language Models with Collaborative and Semantic Experts, **[AAAI'25, CCF-A]**
 
     *Jiaxi Yang*, *Binyuan Hui*, *Min Yang*, *Jian Yang*, ***Lei Zhang***, *Junyang Lin*, *Chang Zhou*
-
-- ExecRepoBench: Multi-level Executable Code Completion Evaluation, **[Preprint]**
-
-    *Jian Yang*, *Jiaxi Yang*, *Ke Jin*, *Yibo Miao*, ***Lei Zhang***, *Liqun Yang*, *Zeyu Cui*, *Yichang Zhang*, *Binyuan Hui*, *Junyang Lin*
-
-- Evaluating and Aligning CodeLLMs on Human Preference, **[Preprint]**
-
-    *Jian Yang*, *Jiaxi Yang*, *Ke Jin*, *Yibo Miao*, ***Lei Zhang***, *Liqun Yang*, *Zeyu Cui*, *Yichang Zhang*, *Binyuan Hui*, *Junyang Lin*
-
-- Next Token Prediction Towards Multimodal Intelligence: A Comprehensive Survey, **[Preprint]**
-
-    *Liang Chen*, *Zekun Wang*, *Shuhuai Ren*, *Lei Li*, *Haozhe Zhao*, *Yunshui Li*, *Zefan Cai*, *Hongcheng Guo*, ***Lei Zhang***, *Yizhe Xiong*, *Yichi Zhang*, *Ruoyu Wu*, *Qingxiu Dong*, *Ge Zhang*, *Jian Yang*, *Lingwei Meng*, *Shujie Hu*, *Yulong Chen*, *Junyang Lin*, *Shuai Bai*, *Andreas Vlachos*, *Xu Tan*, *Minjia Zhang*, *Wen Xiao*, *Aaron Yee*, *Tianyu Liu*, *Baobao Chang*
 
 - Qwen2.5 Technical Report, **[Technical Report]**
 
@@ -76,6 +68,18 @@ I’m currently interning at **Alibaba Qwen Group** in Beijing, China, conductin
 - Image-text retrieval via contrastive learning with auxiliary generative features and support-set regularization, **[SIGIR'22, CCF-A]**
 
     ***Lei Zhang***, *Min Yang*, *Chengming Li*, *Ruifeng Xu*
+
+- ExecRepoBench: Multi-level Executable Code Completion Evaluation, **[Preprint]**
+
+    *Jian Yang*, *Jiaxi Yang*, *Ke Jin*, *Yibo Miao*, ***Lei Zhang***, *Liqun Yang*, *Zeyu Cui*, *Yichang Zhang*, *Binyuan Hui*, *Junyang Lin*
+
+- Next Token Prediction Towards Multimodal Intelligence: A Comprehensive Survey, **[Preprint]**
+
+    *Liang Chen*, *Zekun Wang*, *Shuhuai Ren*, *Lei Li*, *Haozhe Zhao*, *Yunshui Li*, *Zefan Cai*, *Hongcheng Guo*, ***Lei Zhang***, *Yizhe Xiong*, *Yichi Zhang*, *Ruoyu Wu*, *Qingxiu Dong*, *Ge Zhang*, *Jian Yang*, *Lingwei Meng*, *Shujie Hu*, *Yulong Chen*, *Junyang Lin*, *Shuai Bai*, *Andreas Vlachos*, *Xu Tan*, *Minjia Zhang*, *Wen Xiao*, *Aaron Yee*, *Tianyu Liu*, *Baobao Chang*
+
+- Openomni: Large language models pivot zero-shot omnimodal alignment across language with real-time self-aware emotional speech synthesis, **[Preprint]**
+
+    *Run Luo*, *Ting-En Lin*, *Haonan Zhang*, *Yuchuan Wu*, *Xiong Liu*, *Min Yang*, *Yongbin Li*, *Longze Chen*, *Jiaming Li*, ***Lei Zhang***, *Xiaobo Xia*, *Hamid Alinejad-Rokny*, *Fei Huang*
 
 ## Research Interests
 

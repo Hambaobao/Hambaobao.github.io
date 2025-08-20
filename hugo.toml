@@ -1,6 +1,6 @@
 baseURL = "http://hambaobao.me/"
 languageCode = "en-us"
-title = "Homepage"
+title = "Home"
 theme = "PaperMod"
 
 [params]
