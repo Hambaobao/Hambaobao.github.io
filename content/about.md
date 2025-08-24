@@ -9,21 +9,35 @@ Hi there, I'm Lei Zhang. 👋
 I'm a Ph.D. student at the **University of Chinese Academy of Sciences**, Beijing, China.
 My research interests include **Agentic Coding**, **Agentic Reinforcement Learning**, and **Natural Language Processing**.
 
-I’m currently interning at **Alibaba Qwen Group** in Beijing, China, conducting research on Large Language Models (LLMs) and their applications.
+I'm currently interning at **Alibaba Qwen Group** in Beijing, China, conducting research on Large Language Models (LLMs) and their applications.
 
 ## Academic Achievements
 
 - **Ph.D. in Computer Application Technology**, University of Chinese Academy of Sciences, 2021-present
 - **B.Sc. in Computer Science**, University of Chinese Academy of Sciences, 2017-2021
 
+## Technical Reports
+- Qwen3-Coder Technical Report, **[Technical Report (Under Preparation)]**
+
+    *Core Contributor* — Responsible for Agentic Coding (including infrastructure implementation and training data synthesis)
+
+- Qwen3 Technical Report, **[Technical Report]**
+
+    *Core Contributor* — Responsible for Agentic Coding (including infrastructure implementation and training data synthesis)
+
+- Qwen2.5-Coder Technical Report, **[Technical Report]**
+
+    *Binyuan Hui*, *Jian Yang*, *Zeyu Cui*, *Jiaxi Yang*, *Dayiheng Liu*, ***Lei Zhang***, *Tianyu Liu*, *Jiajun Zhang*, *Bowen Yu*, *Kai Dang*, *An Yang*, *Rui Men*, *Fei Huang*, *Xingzhang Ren*, *Xuancheng Ren*, *Jingren Zhou*, *Junyang Lin*
+
+- Qwen2.5 Technical Report, **[Technical Report]**
+
+    *Contributor* — Responsible for integrating and conducting code evaluation (EvalPlus, Multiple, LiveCodeBench, BigCodeBench) for iterative model development.
+
+
 ## Publications
 - CodeArena: Evaluating and Aligning CodeLLMs on Human Preference, **[EMNLP'25, CCF-B]**
 
     *Jian Yang*, *Jiaxi Yang*, *Wei Zhang*, *Ke Jin*, *Yibo Miao*, ***Lei Zhang***, *Liqun Yang*, *Zeyu Cui*, *Yichang Zhang*, *Binyuan Hui*, *Junyang Lin*
-
-- Qwen3 Technical Report, **[Technical Report]**
-
-    *Contributor* — Responsible for Agentic Coding (including infrastructure implementation and training data synthesis)
 
 - SWE-Flow: Synthesizing Software Engineering Data in a Test-Driven Manner, **[ICML'25, CCF-A]** 
 
@@ -40,14 +54,6 @@ I’m currently interning at **Alibaba Qwen Group** in Beijing, China, conductin
 - Fine-Tuning Language Models with Collaborative and Semantic Experts, **[AAAI'25, CCF-A]**
 
     *Jiaxi Yang*, *Binyuan Hui*, *Min Yang*, *Jian Yang*, ***Lei Zhang***, *Junyang Lin*, *Chang Zhou*
-
-- Qwen2.5 Technical Report, **[Technical Report]**
-
-    *Contributor* — Responsible for integrating and conducting code evaluation (EvalPlus, Multiple, LiveCodeBench, BigCodeBench) for iterative model development.
-
-- Qwen2.5-Coder Technical Report, **[Technical Report]**
-
-    *Binyuan Hui*, *Jian Yang*, *Zeyu Cui*, *Jiaxi Yang*, *Dayiheng Liu*, ***Lei Zhang***, *Tianyu Liu*, *Jiajun Zhang*, *Bowen Yu*, *Kai Dang*, *An Yang*, *Rui Men*, *Fei Huang*, *Xingzhang Ren*, *Xuancheng Ren*, *Jingren Zhou*, *Junyang Lin*
 
 - Ruler: A Model-Agnostic Method to Control Generated Length for Large Language Models, **[EMNLP'24, CCF-B]**
 
