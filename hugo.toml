@@ -15,13 +15,13 @@ ShowCodeCopyButtons = true
 customCSS = ["css/override.css"]
 
 [[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 1
-
-[[menu.main]]
 identifier = "posts"
 name = "Posts"
 url = "/posts/"
+weight = 1
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
 weight = 2

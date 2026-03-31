@@ -1,3 +1,7 @@
 :root {
     --main-width: 1020px;
 }
+
+.logo a {
+    font-size: 32px;
+}
