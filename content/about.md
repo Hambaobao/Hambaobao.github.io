@@ -38,6 +38,8 @@ I believe that almost everything in the modern world is built on software — an
 
 
 ## Selected Publications
+[See full list →](/publications/)
+
 - MegaFlow: Large-Scale Distributed Orchestration System for the Agentic Era, **[Preprint]**
 
     ***Lei Zhang***, *Mouxiang Chen*, *Ruishen Cao*, *Jiawei Chen*, *Fan Zhou*, *Yiheng Xu*, *Jiaxi Yang*, *Liang Chen*, *Changwei Luo*, *Kai Zhang*, *Fan Yan*, *Jiachun Shen*, *Jiajun Zhang*, *Zeyu Cui*, *Feng Hu*, *Junyang Lin*, *Binyuan Hui*, *Min Yang*
