@@ -5,6 +5,14 @@ draft: false
 ---
 
 ## 2026
+- From Completion to Editing: Unlocking Context-Aware Code Infilling via Search-and-Replace Instruction Tuning, **[ACL'26, CCF-A]**
+
+    *Jiajun Zhang*, *Zeyu Cui*, *Jiaxi Yang*, ***Lei Zhang***, *Yuheng Jing*, *Zeyao Ma*, *Tianyi Bai*, *Zilei Wang*, *Qiang Liu*, *Liang Wang*, *Binyuan Hui*, *Junyang Lin*
+
+- Towards IP Intelligence: Benchmarking Large Language Models on Intellectual Property Knowledge and Practice, **[ACL'26 Findings, CCF-A]**
+
+    *Qiyao Wang*, *Guhong Chen*, *Hongbo Wang*, *Huaren Liu*, *Minghui Zhu*, *Zhifei Qin*, *Li Linwei*, *Yilin Yue*, *Shiqiang Wang*, *Jiayan Li*, *Wu Yihang*, *Ziqiang Liu*, *Longze Chen*, *Run Luo*, *Liyang Fan*, *Jiaming Li*, ***Lei Zhang***, *Kan Xu*, *Hamid Alinejad-Rokny*, *Chengming Li*, *Shiwen Ni*, *Yuan Lin*, *Min Yang*
+
 - SWE-RM: Execution-free Feedback for Software Engineering Agents, **[ICLR'26, CCF-A]**
 
     *Jiachun Shen*, *Binyuan Hui*, *Jiawei Chen*, ***Lei Zhang***, *Jiaxi Yang*, *Junyang Lin*, *Junxian He*
