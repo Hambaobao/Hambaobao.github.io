@@ -7,12 +7,34 @@ theme = "PaperMod"
 author = "Lei Zhang"
 description = "This is my personal website."
 
-homeInfoParams = { Title = "👋 Hi, I'm Lei Zhang", Content = "Welcome to my personal site." }
+[params.homeInfoParams]
+Title = "👋 Hi, I'm Lei Zhang"
+Content = "Ph.D. student at the University of Chinese Academy of Sciences, researching **Agentic Coding**, **Agentic Infra**, and **Agentic Reinforcement Learning**. Core contributor to **Qwen2.5-Coder**, **Qwen3**, and **Qwen3-Coder** at Alibaba Qwen Group."
 
 ShowShareButtons = false
 ShowReadingTime = true
 ShowCodeCopyButtons = true
 customCSS = ["css/override.css"]
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/Hambaobao"
+
+[[params.socialIcons]]
+name = "googlescholar"
+url = "https://scholar.google.com/citations?user=K8di4JwAAAAJ&hl=en"
+
+[[params.socialIcons]]
+name = "x"
+url = "https://x.com/JamesZhang0365"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/lei-zhang-6bab0a19b/"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:jameszhang2880@gmail.com"
 
 [[menu.main]]
 identifier = "posts"
