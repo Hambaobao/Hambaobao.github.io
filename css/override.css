@@ -5,3 +5,7 @@
 .logo a {
     font-size: 24px;
 }
+
+.post-content {
+    text-align: justify;
+}
