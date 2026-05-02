@@ -1,0 +1,13 @@
+{{ $title := .Get "title" }}
+{{ $venue := .Get "venue" }}
+{{ $authors := .Get "authors" }}
+{{ $me := .Get "me" | default "Lei Zhang" }}
+
+{{ $highlighted := printf "<strong><em>%s</em></strong>" $me }}
+{{ $authors = replace $authors $me $highlighted }}
+
+<div class="paper">
+  <div class="paper-title">{{ $title }}</div>
+  <span class="paper-venue">[{{ $venue }}]</span>
+  <div class="paper-authors">{{ $authors | safeHTML }}</div>
+</div>
