@@ -5,6 +5,34 @@ draft: false
 ---
 
 ## 2026
+- PlotCraft: Pushing the Limits of LLMs for Complex and Interactive Data Visualization, **[ICML'26, CCF-A]**
+
+    *Jiajun Zhang*, *Jianke Zhang*, *Zeyu Cui*, *Jiaxi Yang*, ***Lei Zhang***, *Zilei Wang*, *Qiang Liu*, *Liang Wang*, *Binyuan Hui*, *Junyang Lin*
+
+- Bringing Code ALIVE: Optimizing Interactive Frontend Mini-Games via Automated Play and Reinforcement Learning at Scale, **[ICML'26, CCF-A]**
+
+    *Jiajun Zhang*, *Yuheng Jing*, *Zeyu Cui*, *Hao Zheng*, *Wentao Chen*, *Kaixin Li*, *Jiaxi Yang*, *Tianbao Xie*, *Zeyao Ma*, *Tianyi Bai*, *KaShun SHUM*, ***Lei Zhang***, *Kai Li*, *Jian Cheng*, *Zilei Wang*, *Qiang Liu*, *Liang Wang*, *Junyang Lin*, *Binyuan Hui*
+
+- Benchmarking the Limits of In-Context Reinforcement Learning for Ad-Hoc Teamwork, **[ICML'26, CCF-A]**
+
+    *Yuheng Jing*, *Kai Li*, *Jiajun Zhang*, *Zeyao Ma*, *Jiaxi Yang*, ***Lei Zhang***, *Zhe Wu*, *Jinmin He*, *Junliang Xing*, *Jian Cheng*
+
+- Scaling Agentic Verifier for Competitive Coding, **[ICML'26, CCF-A]**
+
+    *Zeyao Ma*, *Jing Zhang*, *Xiaokang Zhang*, *Jiaxi Yang*, *Zongmeng Zhang*, *Jiajun Zhang*, *Yuheng Jing*, ***Lei Zhang***, *Hao Zheng*, *Wenting Zhao*, *Junyang Lin*, *Binyuan Hui*
+
+- Breaking the Block: Preserving Data Continuity to Train Superior SAEs for Instruct Models, **[ICML'26, CCF-A]**
+
+    *Jiaming Li*, *Haoran Ye*, *Yukun Chen*, *Xinyue Li*, ***Lei Zhang***, *Hamid Alinejad-Rokny*, *Jimmy Chih-Hsien Peng*, *Min Yang*
+
+- RuCL: Stratified Rubric-Based Curriculum Learning for Multimodal Large Language Model Reasoning, **[ICML'26, CCF-A]**
+
+    *Yukun Chen*, *Jiaming Li*, *Longze Chen*, *Ze Gong*, *Jingpeng Li*, *Zhen Qin*, *Hengyu Chang*, ***Lei Zhang***, *Ancheng Xu*, *Zhihao Yang*, *Hamid Alinejad-Rokny*, *QIANG QU*, *Bo Zheng*, *Min Yang*
+
+- Implicit Actor Critic Coupling via a Supervised Learning Framework for RLVR, **[ICML'26, CCF-A]**
+
+    *Jiaming Li*, *Longze Chen*, *Ze Gong*, *Yukun Chen*, *Lu Wang*, *Wanwei He*, *Run Luo*, *Minzheng Wang*, ***Lei Zhang***, *Haoran Ye*, *Min Yang*
+
 - From Completion to Editing: Unlocking Context-Aware Code Infilling via Search-and-Replace Instruction Tuning, **[ACL'26, CCF-A]**
 
     *Jiajun Zhang*, *Zeyu Cui*, *Jiaxi Yang*, ***Lei Zhang***, *Yuheng Jing*, *Zeyao Ma*, *Tianyi Bai*, *Zilei Wang*, *Qiang Liu*, *Liang Wang*, *Binyuan Hui*, *Junyang Lin*
@@ -25,7 +53,7 @@ draft: false
 
     *Mouxiang Chen*, ***Lei Zhang***, *Yunlong Feng*, *Xuwu Wang*, *Wenting Zhao*, *Ruisheng Cao*, *Jiaxi Yang*, *Jiawei Chen*, *Mingze Li*, *Zeyao Ma*, *Hao Ge*, *Zongmeng Zhang*, *Zeyu Cui*, *Dayiheng Liu*, *Jingren Zhou*, *Jianling Sun*, *Junyang Lin*, *Binyuan Hui*
 
-- Reinforcement Learning for Symbolic Graphics Code with Visual Feedback, **[Under Review (ICML'26)]**
+- Reinforcement Learning for Symbolic Graphics Code with Visual Feedback, **[Preprint]**
 
     *Jiaxi Yang*, ***Lei Zhang***, *Min Yang*, *Zeyu Cui*, *Jiajun Zhang*, *Jian Yang*, *Junyang Lin*, *Binyuan Hui*
 
